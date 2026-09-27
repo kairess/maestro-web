@@ -1,0 +1,7 @@
+node_modules
+dist
+public/mediapipe/wasm
+public/mediapipe/*.task
+.DS_Store
+smoke-out
+reference/

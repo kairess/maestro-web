@@ -1,0 +1,145 @@
+{
+  "_comment": "Instrument positions as seen by the conductor. x: -1 (left) .. 1 (right), y: 0 (front row) .. 1 (back) are used for judging (cue side) and the drawn placeholder. u, v: where the section appears in the backdrop image (0..1 from the top-left). image/video: optional backdrop; video wins over image; both null = drawn placeholder.",
+  "video": null,
+  "image": "stage/stage.jpg",
+  "instruments": {
+    "Violins_1": {
+      "x": -0.75,
+      "y": 0.15,
+      "u": 0.09,
+      "v": 0.659
+    },
+    "Violins_2": {
+      "x": -0.35,
+      "y": 0.2,
+      "u": 0.269,
+      "v": 0.648
+    },
+    "Viola": {
+      "x": 0.35,
+      "y": 0.2,
+      "u": 0.634,
+      "v": 0.648
+    },
+    "Violoncello": {
+      "x": 0.7,
+      "y": 0.15,
+      "u": 0.867,
+      "v": 0.744
+    },
+    "DoubleBass": {
+      "x": 0.9,
+      "y": 0.45,
+      "u": 0.921,
+      "v": 0.51
+    },
+    "Harp": {
+      "x": -0.9,
+      "y": 0.4,
+      "u": 0.048,
+      "v": 0.446
+    },
+    "Keyboard": {
+      "x": -0.85,
+      "y": 0.6,
+      "u": 0.23,
+      "v": 0.452
+    },
+    "Woodwind": {
+      "x": 0.0,
+      "y": 0.42,
+      "u": 0.496,
+      "v": 0.537
+    },
+    "Flute": {
+      "x": -0.15,
+      "y": 0.4,
+      "u": 0.383,
+      "v": 0.537
+    },
+    "Oboe": {
+      "x": 0.15,
+      "y": 0.4,
+      "u": 0.464,
+      "v": 0.537
+    },
+    "Clarinet": {
+      "x": -0.15,
+      "y": 0.5,
+      "u": 0.538,
+      "v": 0.537
+    },
+    "Basson": {
+      "x": 0.15,
+      "y": 0.5,
+      "u": 0.616,
+      "v": 0.531
+    },
+    "Horns": {
+      "x": -0.5,
+      "y": 0.6,
+      "u": 0.287,
+      "v": 0.43
+    },
+    "Trumpet": {
+      "x": 0.45,
+      "y": 0.62,
+      "u": 0.637,
+      "v": 0.425
+    },
+    "Trombone": {
+      "x": 0.65,
+      "y": 0.68,
+      "u": 0.742,
+      "v": 0.436
+    },
+    "Tuba": {
+      "x": 0.8,
+      "y": 0.72,
+      "u": 0.834,
+      "v": 0.436
+    },
+    "Brass": {
+      "x": 0.6,
+      "y": 0.66,
+      "u": 0.742,
+      "v": 0.43
+    },
+    "Timpani": {
+      "x": 0.0,
+      "y": 0.72,
+      "u": 0.508,
+      "v": 0.436
+    },
+    "Percussion": {
+      "x": -0.25,
+      "y": 0.75,
+      "u": 0.38,
+      "v": 0.452
+    },
+    "Choir_Left": {
+      "x": -0.55,
+      "y": 0.92,
+      "u": 0.239,
+      "v": 0.319
+    },
+    "Choir_Center": {
+      "x": 0.0,
+      "y": 0.94,
+      "u": 0.496,
+      "v": 0.319
+    },
+    "Choir_Right": {
+      "x": 0.55,
+      "y": 0.92,
+      "u": 0.766,
+      "v": 0.319
+    },
+    "Choir_Tutti": {
+      "x": 0.0,
+      "y": 0.92,
+      "u": 0.496,
+      "v": 0.319
+    }
+  }
+}

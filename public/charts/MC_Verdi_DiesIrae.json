@@ -1,0 +1,2848 @@
+{
+ "name": "MC_Verdi_DiesIrae",
+ "sound": "/Game/Scores/Verdi_DiesIrae/Verdi_DiesIrae_Cue.Verdi_DiesIrae_Cue",
+ "audio": [
+  "audio/Verdi_DiesIrae/Verdi_DiesIrae.ogg",
+  "audio/Verdi_DiesIrae/Verdi_DiesIrae_Fail.ogg"
+ ],
+ "applause_time": 254.0,
+ "num_initial_beats_to_skip": 0,
+ "beat_times": [
+  0.0,
+  0.388552,
+  0.777104,
+  1.155208,
+  1.533312,
+  1.905603,
+  2.277894,
+  2.644164,
+  3.010434,
+  3.398608,
+  3.786782,
+  4.174956,
+  4.56313,
+  4.951304,
+  5.339478,
+  5.727652,
+  6.115826,
+  6.498359,
+  6.880892,
+  7.263425,
+  7.645958,
+  8.028491,
+  8.411024,
+  8.793557,
+  9.17609,
+  9.571881,
+  9.967672,
+  10.363463,
+  10.759254,
+  11.164508,
+  11.569762,
+  11.975016,
+  12.391218,
+  12.763616,
+  13.136014,
+  13.508412,
+  13.88081,
+  14.258138,
+  14.635466,
+  15.012794,
+  15.390122,
+  15.77037,
+  16.150618,
+  16.530867,
+  16.911114,
+  17.291363,
+  17.67161,
+  18.051859,
+  18.432106,
+  18.812353,
+  19.192602,
+  19.572849,
+  19.953098,
+  20.333345,
+  20.713594,
+  21.093842,
+  21.474091,
+  21.868294,
+  22.262497,
+  22.656698,
+  23.050901,
+  23.446287,
+  23.841675,
+  24.237061,
+  24.632446,
+  25.016005,
+  25.399563,
+  25.783119,
+  26.166677,
+  26.549334,
+  26.931988,
+  27.314644,
+  27.697298,
+  28.079952,
+  28.462608,
+  28.845263,
+  29.227919,
+  29.600412,
+  29.972906,
+  30.3454,
+  30.717894,
+  31.11475,
+  31.511606,
+  31.908463,
+  32.305317,
+  32.702175,
+  33.09903,
+  33.495888,
+  33.892742,
+  34.289597,
+  34.686455,
+  35.083309,
+  35.487358,
+  35.891407,
+  36.295456,
+  36.699505,
+  37.103554,
+  37.504204,
+  37.904854,
+  38.305504,
+  38.70615,
+  39.1068,
+  39.50745,
+  39.908096,
+  40.308746,
+  40.709396,
+  41.110046,
+  41.510693,
+  41.911343,
+  42.312954,
+  42.714561,
+  43.116173,
+  43.563423,
+  43.975311,
+  44.387199,
+  44.799088,
+  45.210976,
+  45.614197,
+  46.017414,
+  46.420635,
+  46.823856,
+  47.220474,
+  47.617088,
+  48.013702,
+  48.410316,
+  48.806934,
+  49.203548,
+  49.600163,
+  49.996777,
+  50.393394,
+  50.790009,
+  51.186623,
+  51.583237,
+  51.979855,
+  52.376469,
+  52.773083,
+  53.169697,
+  53.568649,
+  53.967598,
+  54.366547,
+  54.765499,
+  55.164448,
+  55.563396,
+  55.962349,
+  56.361298,
+  56.732704,
+  57.104111,
+  57.475517,
+  57.846924,
+  58.360619,
+  58.786198,
+  59.211777,
+  59.617462,
+  60.025913,
+  60.434368,
+  60.842819,
+  61.251274,
+  61.690971,
+  62.130669,
+  62.554916,
+  62.951187,
+  63.350121,
+  63.749054,
+  64.147987,
+  64.546921,
+  64.965347,
+  65.383774,
+  65.8022,
+  66.220627,
+  66.651764,
+  67.082893,
+  67.524208,
+  67.965523,
+  68.425079,
+  68.884644,
+  69.360817,
+  69.861015,
+  70.278694,
+  70.696373,
+  71.114052,
+  71.531723,
+  71.939651,
+  72.34758,
+  72.755508,
+  73.163437,
+  73.597427,
+  74.03141,
+  74.465401,
+  74.910957,
+  75.337128,
+  75.763298,
+  76.189468,
+  76.615639,
+  77.030731,
+  77.445831,
+  77.860931,
+  78.276024,
+  78.68586,
+  79.095688,
+  79.505516,
+  79.915344,
+  80.334518,
+  80.753693,
+  81.172867,
+  81.587418,
+  81.998787,
+  82.410149,
+  82.82151,
+  83.23288,
+  83.644241,
+  84.055603,
+  84.466965,
+  84.878334,
+  85.273476,
+  85.668625,
+  86.063766,
+  86.458916,
+  86.854057,
+  87.249199,
+  87.644348,
+  88.03949,
+  88.483009,
+  88.926529,
+  89.370049,
+  89.813576,
+  90.225716,
+  90.637863,
+  91.050011,
+  91.462151,
+  91.918671,
+  92.375191,
+  92.831711,
+  93.288231,
+  93.718964,
+  94.149696,
+  94.580437,
+  95.011169,
+  95.413559,
+  95.815948,
+  96.218338,
+  96.620728,
+  97.023117,
+  97.425507,
+  97.827896,
+  98.230286,
+  98.631546,
+  99.032806,
+  99.434074,
+  99.835335,
+  100.236595,
+  100.637856,
+  101.039116,
+  101.440376,
+  101.841637,
+  102.242897,
+  102.644157,
+  103.045418,
+  103.446678,
+  103.847939,
+  104.249207,
+  104.650467,
+  105.064819,
+  105.479179,
+  105.893539,
+  106.307899,
+  106.718231,
+  107.128563,
+  107.538902,
+  107.949234,
+  108.359566,
+  108.769897,
+  109.186165,
+  109.602425,
+  110.018692,
+  110.434959,
+  110.851227,
+  111.267487,
+  111.683754,
+  112.100021,
+  112.504028,
+  112.908043,
+  113.312057,
+  113.716072,
+  114.120087,
+  114.524094,
+  114.928108,
+  115.332123,
+  115.736137,
+  116.155373,
+  116.574608,
+  116.993843,
+  117.413086,
+  117.832321,
+  118.23317,
+  118.63401,
+  119.034859,
+  119.435707,
+  119.836548,
+  120.237396,
+  120.638245,
+  121.039085,
+  121.429947,
+  121.820801,
+  122.211655,
+  122.602509,
+  122.99337,
+  123.384224,
+  123.775078,
+  124.165939,
+  124.55114,
+  124.93634,
+  125.321548,
+  125.706749,
+  126.091949,
+  126.477158,
+  126.862358,
+  127.247559,
+  127.635727,
+  128.023895,
+  128.412064,
+  128.800217,
+  129.188385,
+  129.576553,
+  129.964722,
+  130.35289,
+  130.737991,
+  131.123077,
+  131.508179,
+  131.893265,
+  132.278366,
+  132.663467,
+  133.048553,
+  133.433655,
+  133.812424,
+  134.191193,
+  134.569946,
+  134.948715,
+  135.327148,
+  135.705597,
+  136.08403,
+  136.462463,
+  136.840897,
+  137.219345,
+  137.597778,
+  137.976212,
+  138.354645,
+  138.733093,
+  139.111526,
+  139.48996,
+  139.889221,
+  140.288467,
+  140.687729,
+  141.086746,
+  141.485779,
+  141.884796,
+  142.283813,
+  142.682846,
+  143.081863,
+  143.480896,
+  143.879913,
+  144.278931,
+  145.005966,
+  145.733002,
+  146.460022,
+  147.187057,
+  147.861053,
+  148.535065,
+  149.209061,
+  149.883057,
+  150.649048,
+  151.415024,
+  152.181015,
+  152.946991,
+  153.618774,
+  154.290558,
+  154.962341,
+  155.634125,
+  156.374146,
+  157.114182,
+  157.854218,
+  158.594238,
+  159.205276,
+  159.816315,
+  160.427353,
+  161.038391,
+  161.708313,
+  162.378235,
+  163.048157,
+  163.718079,
+  164.409546,
+  165.101013,
+  165.79248,
+  166.483948,
+  167.124924,
+  167.7659,
+  168.406876,
+  169.047852,
+  169.635834,
+  170.223801,
+  170.811783,
+  171.39975,
+  172.078247,
+  172.756744,
+  173.435242,
+  174.113724,
+  174.699188,
+  175.284637,
+  175.870087,
+  176.455536,
+  177.053101,
+  177.650665,
+  178.24823,
+  178.845795,
+  179.429962,
+  180.014145,
+  180.580521,
+  181.146896,
+  181.668198,
+  182.189514,
+  182.710815,
+  183.232117,
+  183.7556,
+  184.279083,
+  184.802551,
+  185.326035,
+  185.849518,
+  186.373001,
+  186.896469,
+  187.419952,
+  187.937149,
+  188.45433,
+  188.971527,
+  189.488724,
+  189.98465,
+  190.480591,
+  190.976517,
+  191.472443,
+  191.965057,
+  192.45015,
+  192.909836,
+  193.525848,
+  194.027832,
+  194.529831,
+  195.03183,
+  195.533813,
+  195.999756,
+  196.465683,
+  196.93161,
+  197.397552,
+  197.871628,
+  198.345703,
+  198.819778,
+  199.293854,
+  199.764954,
+  200.236038,
+  200.707123,
+  201.178207,
+  201.683624,
+  202.189026,
+  202.694443,
+  203.20932,
+  203.724182,
+  204.21106,
+  204.697937,
+  205.340271,
+  205.830383,
+  206.320511,
+  206.810638,
+  207.300751,
+  207.790878,
+  208.280991,
+  208.771118,
+  209.318893,
+  209.834641,
+  210.350388,
+  210.866135,
+  211.381882,
+  211.897644,
+  212.413391,
+  212.880432,
+  213.347488,
+  213.852737,
+  214.357971,
+  214.86322,
+  215.368469,
+  215.837753,
+  216.307037,
+  216.776321,
+  217.245605,
+  217.75322,
+  218.260834,
+  218.768448,
+  219.276062,
+  219.783676,
+  220.279465,
+  220.775253,
+  221.271027,
+  221.776688,
+  222.282333,
+  222.787979,
+  223.29364,
+  223.799286,
+  224.304932,
+  224.810593,
+  225.316238,
+  225.822891,
+  226.292557,
+  226.762238,
+  227.231918,
+  227.713898,
+  228.195877,
+  228.677872,
+  229.159851,
+  229.642349,
+  230.124832,
+  230.60733,
+  231.089828,
+  231.572311,
+  232.05481,
+  232.537308,
+  233.019806,
+  233.518784,
+  234.017761,
+  234.542557,
+  235.099106,
+  235.562057,
+  236.025009,
+  236.487946,
+  236.950897,
+  237.429352,
+  237.907806,
+  238.386261,
+  238.864716,
+  239.34317,
+  239.821625,
+  240.300079,
+  240.778534,
+  241.266891,
+  241.755249,
+  242.264511,
+  242.773773,
+  243.275085,
+  243.776413,
+  244.27774,
+  244.779053,
+  245.28038,
+  245.781693,
+  246.28302,
+  246.784348,
+  247.344467,
+  247.95549,
+  248.633667,
+  249.352051,
+  250.096344,
+  250.840637
+ ],
+ "gestures": [
+  {
+   "beat": 0,
+   "time": 0.0,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 2,
+   "time": 0.7771,
+   "tokens": [
+    "DownLeft",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 4,
+   "time": 1.5333,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 6,
+   "time": 2.2779,
+   "tokens": [
+    "DownLeft",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 14,
+   "time": 5.3395,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 18,
+   "time": 6.8809,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 19,
+   "time": 7.2634,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 20,
+   "time": 7.646,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 21,
+   "time": 8.0285,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 34,
+   "time": 13.136,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 35,
+   "time": 13.5084,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 36,
+   "time": 13.8808,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 37,
+   "time": 14.2581,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 40,
+   "time": 15.3901,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 42,
+   "time": 16.1506,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 44,
+   "time": 16.9111,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 46,
+   "time": 17.6716,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 51,
+   "time": 19.5728,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 52,
+   "time": 19.9531,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 53,
+   "time": 20.3333,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 54,
+   "time": 20.7136,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 58,
+   "time": 22.2625,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 59,
+   "time": 22.6567,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 60,
+   "time": 23.0509,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 61,
+   "time": 23.4463,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 62,
+   "time": 23.8417,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 63,
+   "time": 24.2371,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 74,
+   "time": 28.4626,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 75,
+   "time": 28.8453,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 76,
+   "time": 29.2279,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 77,
+   "time": 29.6004,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 78,
+   "time": 29.9729,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 79,
+   "time": 30.3454,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 81,
+   "time": 31.1148,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 85,
+   "time": 32.7022,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 88,
+   "time": 33.8927,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 89,
+   "time": 34.2896,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 90,
+   "time": 34.6865,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 91,
+   "time": 35.0833,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 97,
+   "time": 37.5042,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 101,
+   "time": 39.1068,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 104,
+   "time": 40.3087,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 105,
+   "time": 40.7094,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 106,
+   "time": 41.11,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 107,
+   "time": 41.5107,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 113,
+   "time": 43.9753,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 115,
+   "time": 44.7991,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 117,
+   "time": 45.6142,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 119,
+   "time": 46.4206,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 122,
+   "time": 47.6171,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 123,
+   "time": 48.0137,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 130,
+   "time": 50.79,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 131,
+   "time": 51.1866,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 138,
+   "time": 53.9676,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 139,
+   "time": 54.3665,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 140,
+   "time": 54.7655,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 141,
+   "time": 55.1644,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 149,
+   "time": 58.3606,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 152,
+   "time": 59.6175,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 168,
+   "time": 66.2206,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 170,
+   "time": 67.0829,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 172,
+   "time": 67.9655,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 174,
+   "time": 68.8846,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 216,
+   "time": 86.4589,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 218,
+   "time": 87.2492,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 224,
+   "time": 89.8136,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 226,
+   "time": 90.6379,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 232,
+   "time": 93.2882,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 234,
+   "time": 94.1497,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 240,
+   "time": 96.6207,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 242,
+   "time": 97.4255,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 256,
+   "time": 103.0454,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 258,
+   "time": 103.8479,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 260,
+   "time": 104.6505,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 262,
+   "time": 105.4792,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 264,
+   "time": 106.3079,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 266,
+   "time": 107.1286,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 268,
+   "time": 107.9492,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 270,
+   "time": 108.7699,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 272,
+   "time": 109.6024,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 274,
+   "time": 110.435,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 276,
+   "time": 111.2675,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 278,
+   "time": 112.1,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 280,
+   "time": 112.908,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 282,
+   "time": 113.7161,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 284,
+   "time": 114.5241,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 286,
+   "time": 115.3321,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 296,
+   "time": 119.4357,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 298,
+   "time": 120.2374,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 300,
+   "time": 121.0391,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 302,
+   "time": 121.8208,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 304,
+   "time": 122.6025,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 306,
+   "time": 123.3842,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 308,
+   "time": 124.1659,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 310,
+   "time": 124.9363,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 312,
+   "time": 125.7067,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 314,
+   "time": 126.4772,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 316,
+   "time": 127.2476,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 318,
+   "time": 128.0239,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 320,
+   "time": 128.8002,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 322,
+   "time": 129.5766,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 324,
+   "time": 130.3529,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 326,
+   "time": 131.1231,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 328,
+   "time": 131.8933,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 330,
+   "time": 132.6635,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 332,
+   "time": 133.4337,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 334,
+   "time": 134.1912,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 336,
+   "time": 134.9487,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 338,
+   "time": 135.7056,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 340,
+   "time": 136.4625,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 342,
+   "time": 137.2193,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 344,
+   "time": 137.9762,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 346,
+   "time": 138.7331,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 348,
+   "time": 139.49,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 350,
+   "time": 140.2885,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 408,
+   "time": 176.4555,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 410,
+   "time": 177.6507,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 412,
+   "time": 178.8458,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 414,
+   "time": 180.0141,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 416,
+   "time": 181.1469,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 418,
+   "time": 182.1895,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 420,
+   "time": 183.2321,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 422,
+   "time": 184.2791,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 424,
+   "time": 185.326,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 426,
+   "time": 186.373,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 428,
+   "time": 187.42,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 429,
+   "time": 187.9371,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 430,
+   "time": 188.4543,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 431,
+   "time": 188.9715,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 432,
+   "time": 189.4887,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 433,
+   "time": 189.9846,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 434,
+   "time": 190.4806,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 435,
+   "time": 190.9765,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 436,
+   "time": 191.4724,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 437,
+   "time": 191.9651,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 438,
+   "time": 192.4502,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 439,
+   "time": 192.9098,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 440,
+   "time": 193.5258,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 444,
+   "time": 195.5338,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 448,
+   "time": 197.3976,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 450,
+   "time": 198.3457,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 452,
+   "time": 199.2939,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 453,
+   "time": 199.765,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 454,
+   "time": 200.236,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 455,
+   "time": 200.7071,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 456,
+   "time": 201.1782,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 457,
+   "time": 201.6836,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 458,
+   "time": 202.189,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 459,
+   "time": 202.6944,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 460,
+   "time": 203.2093,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 461,
+   "time": 203.7242,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 462,
+   "time": 204.2111,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 463,
+   "time": 204.6979,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 468,
+   "time": 207.3008,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 469,
+   "time": 207.7909,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 470,
+   "time": 208.281,
+   "tokens": [
+    "DownLeft",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 471,
+   "time": 208.7711,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 476,
+   "time": 211.3819,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 477,
+   "time": 211.8976,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 478,
+   "time": 212.4134,
+   "tokens": [
+    "DownLeft",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 479,
+   "time": 212.8804,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 484,
+   "time": 215.3685,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 485,
+   "time": 215.8378,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 486,
+   "time": 216.307,
+   "tokens": [
+    "DownLeft",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 487,
+   "time": 216.7763,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 489,
+   "time": 217.7532,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 490,
+   "time": 218.2608,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 491,
+   "time": 218.7684,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 492,
+   "time": 219.2761,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 493,
+   "time": 219.7837,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 494,
+   "time": 220.2795,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 504,
+   "time": 225.3162,
+   "tokens": [
+    "Down"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 505,
+   "time": 225.8229,
+   "tokens": [
+    "Left"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 506,
+   "time": 226.2926,
+   "tokens": [
+    "Right"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 507,
+   "time": 226.7622,
+   "tokens": [
+    "Up"
+   ],
+   "type": "Normal"
+  },
+  {
+   "beat": 508,
+   "time": 227.2319,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 512,
+   "time": 229.1599,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 516,
+   "time": 231.0898,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 517,
+   "time": 231.5723,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 518,
+   "time": 232.0548,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 519,
+   "time": 232.5373,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 520,
+   "time": 233.0198,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 524,
+   "time": 235.0991,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 528,
+   "time": 236.9509,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 532,
+   "time": 238.8647,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 533,
+   "time": 239.3432,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 534,
+   "time": 239.8216,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 535,
+   "time": 240.3001,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 540,
+   "time": 242.7738,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 541,
+   "time": 243.2751,
+   "tokens": [
+    "DownRight",
+    "DownRight",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 544,
+   "time": 244.7791,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 545,
+   "time": 245.2804,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 546,
+   "time": 245.7817,
+   "tokens": [
+    "DownLeft",
+    "DownRight"
+   ],
+   "type": "Accent"
+  },
+  {
+   "beat": 547,
+   "time": 246.283,
+   "tokens": [
+    "Down",
+    "Down"
+   ],
+   "type": "Accent"
+  }
+ ],
+ "cues": [
+  {
+   "beat": 9,
+   "time": 3.3986,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 16,
+   "time": 6.1158,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 50,
+   "time": 19.1926,
+   "instrument": "Choir_Left"
+  },
+  {
+   "beat": 56,
+   "time": 21.4741,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 120,
+   "time": 46.8239,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 156,
+   "time": 61.2513,
+   "instrument": "Brass"
+  },
+  {
+   "beat": 160,
+   "time": 62.9512,
+   "instrument": "Brass"
+  },
+  {
+   "beat": 164,
+   "time": 64.5469,
+   "instrument": "Brass"
+  },
+  {
+   "beat": 180,
+   "time": 71.5317,
+   "instrument": "Tutti"
+  },
+  {
+   "beat": 188,
+   "time": 74.911,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 194,
+   "time": 77.4458,
+   "instrument": "Brass"
+  },
+  {
+   "beat": 196,
+   "time": 78.276,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 202,
+   "time": 80.7537,
+   "instrument": "Brass"
+  },
+  {
+   "beat": 204,
+   "time": 81.5874,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 251,
+   "time": 101.0391,
+   "instrument": "Basson"
+  },
+  {
+   "beat": 267,
+   "time": 107.5389,
+   "instrument": "Oboe"
+  },
+  {
+   "beat": 291,
+   "time": 117.4131,
+   "instrument": "Violoncello"
+  },
+  {
+   "beat": 308,
+   "time": 124.1659,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 316,
+   "time": 127.2476,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 326,
+   "time": 131.1231,
+   "instrument": "Choir_Tutti"
+  },
+  {
+   "beat": 332,
+   "time": 133.4337,
+   "instrument": "Choir_Right"
+  },
+  {
+   "beat": 344,
+   "time": 137.9762,
+   "instrument": "Choir_Right"
+  },
+  {
+   "beat": 360,
+   "time": 144.2789,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 364,
+   "time": 147.1871,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 376,
+   "time": 155.6341,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 380,
+   "time": 158.5942,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 392,
+   "time": 166.4839,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 396,
+   "time": 169.0479,
+   "instrument": "Trumpet"
+  },
+  {
+   "beat": 440,
+   "time": 193.5258,
+   "instrument": "BassDrum"
+  },
+  {
+   "beat": 464,
+   "time": 205.3403,
+   "instrument": "Choir_Right"
+  },
+  {
+   "beat": 472,
+   "time": 209.3189,
+   "instrument": "Choir_Left"
+  },
+  {
+   "beat": 480,
+   "time": 213.3475,
+   "instrument": "Choir_Right"
+  },
+  {
+   "beat": 488,
+   "time": 217.2456,
+   "instrument": "Choir_Left"
+  },
+  {
+   "beat": 492,
+   "time": 219.2761,
+   "instrument": "Choir_Left"
+  },
+  {
+   "beat": 509,
+   "time": 227.7139,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 522,
+   "time": 234.0178,
+   "instrument": "Choir_Center"
+  },
+  {
+   "beat": 525,
+   "time": 235.5621,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 529,
+   "time": 237.4294,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 536,
+   "time": 240.7785,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 538,
+   "time": 241.7552,
+   "instrument": "Choir_Center"
+  }
+ ],
+ "dynamics": [
+  {
+   "type": "Crescendo",
+   "instrument": "Flute",
+   "begin": 125,
+   "end": 128,
+   "time": [
+    48.8069,
+    49.9968
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Flute",
+   "begin": 133,
+   "end": 136,
+   "time": [
+    51.9799,
+    53.1697
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Choir_Tutti",
+   "begin": 166,
+   "end": 172,
+   "time": [
+    65.3838,
+    67.9655
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Violins",
+   "begin": 176,
+   "end": 179,
+   "time": [
+    69.861,
+    71.1141
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Tutti",
+   "begin": 210,
+   "end": 213,
+   "time": [
+    84.0556,
+    85.2735
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Brass",
+   "begin": 220,
+   "end": 223,
+   "time": [
+    88.0395,
+    89.37
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Trumpet",
+   "begin": 228,
+   "end": 231,
+   "time": [
+    91.4622,
+    92.8317
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Clarinette",
+   "begin": 236,
+   "end": 239,
+   "time": [
+    95.0112,
+    96.2183
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Violins_2",
+   "begin": 244,
+   "end": 247,
+   "time": [
+    98.2303,
+    99.4341
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Choir_Left",
+   "begin": 252,
+   "end": 255,
+   "time": [
+    101.4404,
+    102.6442
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Choir_Left",
+   "begin": 268,
+   "end": 272,
+   "time": [
+    107.9492,
+    109.6024
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Choir_Tutti",
+   "begin": 352,
+   "end": 358,
+   "time": [
+    141.0867,
+    143.4809
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Trumpet",
+   "begin": 368,
+   "end": 373,
+   "time": [
+    149.8831,
+    153.6188
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Trumpet",
+   "begin": 384,
+   "end": 389,
+   "time": [
+    161.0384,
+    164.4095
+   ]
+  },
+  {
+   "type": "Decrescendo",
+   "instrument": "Trumpet",
+   "begin": 400,
+   "end": 403,
+   "time": [
+    171.3998,
+    173.4352
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Trumpet",
+   "begin": 408,
+   "end": 412,
+   "time": [
+    176.4555,
+    178.8458
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Trumpet",
+   "begin": 416,
+   "end": 420,
+   "time": [
+    181.1469,
+    183.2321
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Trumpet",
+   "begin": 424,
+   "end": 428,
+   "time": [
+    185.326,
+    187.42
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Choir_Left",
+   "begin": 516,
+   "end": 519,
+   "time": [
+    231.0898,
+    232.5373
+   ]
+  },
+  {
+   "type": "Crescendo",
+   "instrument": "Choir_Left",
+   "begin": 532,
+   "end": 535,
+   "time": [
+    238.8647,
+    240.3001
+   ]
+  }
+ ],
+ "fermatas": [
+  {
+   "instrument": "Choir_Tutti",
+   "begin": 24,
+   "end": 32,
+   "time": [
+    9.1761,
+    12.3912
+   ]
+  },
+  {
+   "instrument": "Choir_Tutti",
+   "begin": 64,
+   "end": 72,
+   "time": [
+    24.6324,
+    27.6973
+   ]
+  },
+  {
+   "instrument": "Choir_Tutti",
+   "begin": 92,
+   "end": 95,
+   "time": [
+    35.4874,
+    36.6995
+   ]
+  },
+  {
+   "instrument": "Choir_Left",
+   "begin": 108,
+   "end": 111,
+   "time": [
+    41.9113,
+    43.1162
+   ]
+  },
+  {
+   "instrument": "Choir_Tutti",
+   "begin": 144,
+   "end": 148,
+   "time": [
+    56.3613,
+    57.8469
+   ]
+  },
+  {
+   "instrument": "Choir_Tutti",
+   "begin": 496,
+   "end": 503,
+   "time": [
+    221.271,
+    224.8106
+   ]
+  },
+  {
+   "instrument": "Tutti",
+   "begin": 548,
+   "end": 552,
+   "time": [
+    246.7843,
+    249.3521
+   ]
+  }
+ ],
+ "focus_sections": [
+  {
+   "beat": 0,
+   "time": 0.0,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 18,
+   "time": 6.8809,
+   "instrument": "Violins_2"
+  },
+  {
+   "beat": 34,
+   "time": 13.136,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 40,
+   "time": 15.3901,
+   "instrument": "DJ"
+  },
+  {
+   "beat": 51,
+   "time": 19.5728,
+   "instrument": "Violins_2"
+  },
+  {
+   "beat": 58,
+   "time": 22.2625,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 74,
+   "time": 28.4626,
+   "instrument": "Timpani"
+  },
+  {
+   "beat": 81,
+   "time": 31.1148,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 88,
+   "time": 33.8927,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 97,
+   "time": 37.5042,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 113,
+   "time": 43.9753,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 122,
+   "time": 47.6171,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 130,
+   "time": 50.79,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 138,
+   "time": 53.9676,
+   "instrument": "Violins_2"
+  },
+  {
+   "beat": 149,
+   "time": 58.3606,
+   "instrument": "Timpani"
+  },
+  {
+   "beat": 152,
+   "time": 59.6175,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 168,
+   "time": 66.2206,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 216,
+   "time": 86.4589,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 256,
+   "time": 103.0454,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 296,
+   "time": 119.4357,
+   "instrument": "Keyboard"
+  },
+  {
+   "beat": 304,
+   "time": 122.6025,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 328,
+   "time": 131.8933,
+   "instrument": "Violoncello"
+  },
+  {
+   "beat": 408,
+   "time": 176.4555,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 432,
+   "time": 189.4887,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 440,
+   "time": 193.5258,
+   "instrument": "Timpani"
+  },
+  {
+   "beat": 444,
+   "time": 195.5338,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 448,
+   "time": 197.3976,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 452,
+   "time": 199.2939,
+   "instrument": "Violins_2"
+  },
+  {
+   "beat": 468,
+   "time": 207.3008,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 476,
+   "time": 211.3819,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 484,
+   "time": 215.3685,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 504,
+   "time": 225.3162,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 512,
+   "time": 229.1599,
+   "instrument": "Viola"
+  },
+  {
+   "beat": 516,
+   "time": 231.0898,
+   "instrument": "Violins_2"
+  },
+  {
+   "beat": 524,
+   "time": 235.0991,
+   "instrument": "Woodwind"
+  },
+  {
+   "beat": 532,
+   "time": 238.8647,
+   "instrument": "Violins_2"
+  },
+  {
+   "beat": 540,
+   "time": 242.7738,
+   "instrument": "Horns"
+  },
+  {
+   "beat": 544,
+   "time": 244.7791,
+   "instrument": "Viola"
+  }
+ ]
+}
