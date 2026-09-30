@@ -1,0 +1,21 @@
+{
+  "name": "maestro-web-showreel",
+  "private": true,
+  "type": "module",
+  "description": "30 s Korean motion-graphics showreel for Maestro Web, rendered frame by frame from HTML/Canvas with headless Chrome.",
+  "scripts": {
+    "fonts": "node scripts/fetch-fonts.mjs",
+    "data": "node scripts/make-data.mjs",
+    "game": "sh scripts/prepare-game.sh",
+    "capture": "node scripts/capture-gameplay.mjs gameplay/perfect 0 1800 && node scripts/capture-gameplay.mjs gameplay/fail 720 1290 botfail=12",
+    "preview": "node scripts/render.mjs preview",
+    "render": "node scripts/render.mjs mb 0 1799 out/chunks 6",
+    "audio": "sh scripts/mix-audio.sh",
+    "assemble": "sh scripts/assemble.sh",
+    "build": "npm run audio && npm run render && npm run assemble && npm run web",
+    "web": "sh scripts/web.sh"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0"
+  }
+}

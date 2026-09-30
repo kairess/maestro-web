@@ -1,0 +1,220 @@
+--- a/src/input/bot.ts
++++ b/src/input/bot.ts
+@@ -3,7 +3,7 @@
+ import type { JudgeProfile } from '../config';
+ import { requirementsFor, type InstrumentAzimuth } from '../game/judge';
+ import type { Vec3 } from '../tracking/handState';
+-import { DEFAULT_SHOULDERS, REST_POSITION, type InputSource, type RawFrame } from './types';
++import { DEFAULT_SHOULDERS, type InputSource, type RawFrame } from './types';
+ 
+ interface Stroke {
+   hand: Hand;
+@@ -14,29 +14,134 @@
+ 
+ const OUT = 0.15; // half duration of the out-stroke (velocity peaks at the beat)
+ const RELAX_TAU = 0.45; // after the stroke the hand relaxes back toward rest
++const VEL_DT = 0.04; // seconds, for the velocity used to tilt the synthetic hands
++// Rest pose a little higher than REST_POSITION so the hands and the quill sit in the first-person view.
++const BOT_REST: Record<Hand, Vec3> = {
++  left: { x: -0.24, y: -0.2, z: -0.42 },
++  right: { x: 0.2, y: -0.13, z: -0.42 },
++};
+ 
++// ---------------------------------------------------------------- synthetic hand landmarks
++
++const v3 = (x: number, y: number, z: number): Vec3 => ({ x, y, z });
++const add = (a: Vec3, b: Vec3, s = 1): Vec3 => ({ x: a.x + b.x * s, y: a.y + b.y * s, z: a.z + b.z * s });
++const scl = (a: Vec3, s: number): Vec3 => ({ x: a.x * s, y: a.y * s, z: a.z * s });
++const dot = (a: Vec3, b: Vec3) => a.x * b.x + a.y * b.y + a.z * b.z;
++const cross = (a: Vec3, b: Vec3): Vec3 => ({ x: a.y * b.z - a.z * b.y, y: a.z * b.x - a.x * b.z, z: a.x * b.y - a.y * b.x });
++const norm = (a: Vec3): Vec3 => {
++  const l = Math.hypot(a.x, a.y, a.z);
++  return l < 1e-9 ? v3(0, 1, 0) : scl(a, 1 / l);
++};
++/** Component of a orthogonal to unit u, normalized. */
++const ortho = (a: Vec3, u: Vec3): Vec3 => norm(add(a, u, -dot(a, u)));
++
++interface FingerSpec {
++  /** MCP offset from the wrist in (F, S, N) palm coordinates. */
++  base: [number, number, number];
++  lens: [number, number, number];
++  /** Cumulative flexion per joint (radians), curling toward the palm normal N. */
++  curl: [number, number, number];
++  /** Lateral spread toward the thumb side S. */
++  spread: number;
++  /** Optional world direction of the first segment (overrides F + spread). */
++  dir?: Vec3;
++}
++
+ /**
++ * MediaPipe-style 21 landmarks from a palm frame: F = along the fingers, N = out of the palm,
++ * S = toward the thumb. Order: wrist, thumb(4), index(4), middle(4), ring(4), pinky(4).
++ */
++function buildHand(wrist: Vec3, F: Vec3, N: Vec3, S: Vec3, fingers: FingerSpec[], thumbDir: Vec3, thumbCurl: number): Vec3[] {
++  const at = (b: [number, number, number]) => add(add(add(wrist, F, b[0]), S, b[1]), N, b[2]);
++  const pts: Vec3[] = [wrist];
++  // Thumb: CMC, MCP, IP, TIP bending gradually toward the palm.
++  let p = at([0.022, 0.02, 0.012]);
++  pts.push(p);
++  let d = norm(thumbDir);
++  const tn = ortho(N, d);
++  const lens = [0.038, 0.032, 0.026];
++  for (let i = 0; i < 3; i++) {
++    const a = thumbCurl * (i + 1) * 0.5;
++    const dir = norm(add(scl(d, Math.cos(a)), tn, Math.sin(a)));
++    p = add(p, dir, lens[i]);
++    pts.push(p);
++  }
++  for (const f of fingers) {
++    let q = at(f.base);
++    pts.push(q);
++    const d0 = f.dir ? norm(f.dir) : norm(add(F, S, f.spread));
++    const n0 = ortho(N, d0);
++    for (let i = 0; i < 3; i++) {
++      const a = f.curl[i];
++      const dir = norm(add(scl(d0, Math.cos(a)), n0, Math.sin(a)));
++      q = add(q, dir, f.lens[i]);
++      pts.push(q);
++    }
++  }
++  return pts;
++}
++
++/** Right hand holding the baton: index finger extended forward and up, the rest curled into a grip. */
++function rightHand(wrist: Vec3, vel: { x: number; y: number }): Vec3[] {
++  const tilt = v3(vel.x * 0.2, vel.y * 0.2, 0);
++  const idx = norm(add(v3(0.06, 0.66, -0.75), tilt));
++  const F = norm(add(v3(0.1, 0.36, -0.93), tilt, 0.8));
++  const N = ortho(v3(-0.55, -0.83, 0), F);
++  const S = cross(F, N);
++  const fist: [number, number, number] = [1.4, 2.8, 3.7];
++  const fingers: FingerSpec[] = [
++    { base: [0.092, 0.024, 0], lens: [0.042, 0.026, 0.022], curl: [0.05, 0.1, 0.13], spread: 0, dir: idx },
++    { base: [0.094, 0.004, 0], lens: [0.044, 0.026, 0.022], curl: fist, spread: 0 },
++    { base: [0.088, -0.015, 0], lens: [0.04, 0.024, 0.02], curl: fist, spread: 0 },
++    { base: [0.077, -0.031, 0.003], lens: [0.031, 0.019, 0.018], curl: fist, spread: 0 },
++  ];
++  return buildHand(wrist, F, N, S, fingers, add(add(scl(F, 0.85), S, 0.35), N, 0.3), 0.25);
++}
++
++/** Left hand: open palm facing the orchestra, fingers up and slightly spread. */
++function leftHand(wrist: Vec3, vel: { x: number; y: number }): Vec3[] {
++  const tilt = v3(vel.x * 0.12, vel.y * 0.06, 0);
++  const F = norm(add(v3(0.04, 0.97, -0.24), tilt));
++  const N = ortho(v3(0.05, -0.1, -1), F);
++  const S = cross(N, F);
++  const open: [number, number, number] = [0.08, 0.16, 0.22];
++  const fingers: FingerSpec[] = [
++    { base: [0.09, 0.025, 0], lens: [0.041, 0.025, 0.022], curl: open, spread: 0.14 },
++    { base: [0.094, 0.005, 0], lens: [0.046, 0.028, 0.024], curl: open, spread: 0.02 },
++    { base: [0.088, -0.015, 0], lens: [0.042, 0.026, 0.023], curl: open, spread: -0.1 },
++    { base: [0.077, -0.032, 0.002], lens: [0.033, 0.021, 0.02], curl: [0.12, 0.2, 0.24], spread: -0.24 },
++  ];
++  return buildHand(wrist, F, N, S, fingers, add(add(scl(F, 0.75), S, 0.55), N, 0.35), 0.35);
++}
++
++/**
+  * Synthesizes an ideal performance from the chart. Used to regression-test the
+  * judge, timing and visuals without a camera (`?bot=1`).
++ * `?botfail=<s>`: from that song time on, the hands rest (everything is missed).
+  */
+ export class BotInput implements InputSource {
+   private strokes: Stroke[];
+   private timingJitter: number;
++  private failAt: number;
+ 
+   constructor(
+     private chart: Chart,
+     profile: JudgeProfile,
+     private azimuth: InstrumentAzimuth,
+-    opts: { jitter?: number } = {},
++    opts: { jitter?: number; failAt?: number } = {},
+   ) {
+     this.timingJitter = opts.jitter ?? 0;
++    const q = typeof location !== 'undefined' ? new URLSearchParams(location.search).get('botfail') : null;
++    this.failAt = opts.failAt ?? (q !== null && Number.isFinite(Number(q)) ? Number(q) : Infinity);
+     this.strokes = [];
+     for (const g of chart.gestures) {
+-      const amp = g.type === 'Accent' ? 0.4 : g.type === 'Low' ? 0.18 : 0.25;
++      const amp = g.type === 'Accent' ? 0.46 : g.type === 'Low' ? 0.18 : 0.25;
+       const jitter = (Math.random() * 2 - 1) * this.timingJitter;
+       for (const r of requirementsFor(g, profile)) {
+         // Like a real player, the stroke finishes on the beat: its speed peak comes strokeLead earlier.
+-        this.strokes.push({ hand: r.hand, dir: TOKEN_DIRECTION[r.token], time: g.time - profile.strokeLead + jitter, amp });
++        const time = g.time - profile.strokeLead + jitter;
++        if (time >= this.failAt) continue;
++        this.strokes.push({ hand: r.hand, dir: TOKEN_DIRECTION[r.token], time, amp });
+       }
+     }
+     this.strokes.sort((a, b) => a.time - b.time);
+@@ -52,8 +157,8 @@
+     return amp * Math.exp(-(dt - OUT) / RELAX_TAU);
+   }
+ 
+-  poll(t: number): RawFrame | null {
+-    const pos: Record<Hand, Vec3> = { left: { ...REST_POSITION.left }, right: { ...REST_POSITION.right } };
++  private positions(t: number): Record<Hand, Vec3> {
++    const pos: Record<Hand, Vec3> = { left: { ...BOT_REST.left }, right: { ...BOT_REST.right } };
+     for (const s of this.strokes) {
+       const dt = t - s.time;
+       if (dt < -OUT) break;
+@@ -64,18 +169,20 @@
+     }
+     // Left-hand expression: cues (raise toward the instrument), dynamics (vertical drift), fermatas (hold up).
+     for (const c of this.chart.cues) {
++      if (c.time >= this.failAt) continue;
+       const dt = t - c.time;
+       if (dt < -0.3 || dt > 0.5) continue;
+       const az = this.azimuth(c.instrument);
+       // Raise over 0.2s, hold through the beat, lower over 0.3s.
+       const u = dt < -0.1 ? 1 - (-dt - 0.1) / 0.2 : dt > 0.2 ? 1 - (dt - 0.2) / 0.3 : 1;
+       const target = { x: -0.2 + az * 0.45, y: 0.2, z: -0.5 };
+-      pos.left.x += (target.x - REST_POSITION.left.x) * u;
+-      pos.left.y += (target.y - REST_POSITION.left.y) * u;
+-      pos.left.z += (target.z - REST_POSITION.left.z) * u;
++      pos.left.x += (target.x - BOT_REST.left.x) * u;
++      pos.left.y += (target.y - BOT_REST.left.y) * u;
++      pos.left.z += (target.z - BOT_REST.left.z) * u;
+     }
+     for (const d of this.chart.dynamics) {
+       const [t0, t1] = d.time;
++      if (t0 >= this.failAt) continue;
+       if (t < t0 - 0.2 || t > t1 + 0.2) continue;
+       const u = Math.min(1, Math.max(0, (t - t0) / (t1 - t0)));
+       const dir = d.type === 'Decrescendo' ? -1 : 1;
+@@ -83,10 +190,34 @@
+     }
+     for (const f of this.chart.fermatas) {
+       const [t0, t1] = f.time;
++      if (t0 >= this.failAt) continue;
+       if (t < t0 - 0.3 || t > t1 + 0.1) continue;
+       pos.left.y = 0.15;
+       pos.left.x = -0.3;
+     }
+-    return { t, tracked: true, shoulders: DEFAULT_SHOULDERS, hands: { left: { pos: pos.left }, right: { pos: pos.right } } };
++    if (t >= this.failAt) {
++      // Idle: a tiny slow sway, far below any stroke speed.
++      for (const h of ['left', 'right'] as Hand[]) {
++        const k = h === 'left' ? 1.3 : 0;
++        pos[h].x += 0.006 * Math.sin(t * 0.9 + k);
++        pos[h].y += 0.006 * Math.sin(t * 0.7 + k);
++      }
++    }
++    return pos;
+   }
++
++  poll(t: number): RawFrame | null {
++    const pos = this.positions(t);
++    const prev = this.positions(t - VEL_DT);
++    const vel = (h: Hand) => ({ x: (pos[h].x - prev[h].x) / VEL_DT, y: (pos[h].y - prev[h].y) / VEL_DT });
++    return {
++      t,
++      tracked: true,
++      shoulders: DEFAULT_SHOULDERS,
++      hands: {
++        left: { pos: pos.left, landmarks: leftHand(pos.left, vel('left')) },
++        right: { pos: pos.right, landmarks: rightHand(pos.right, vel('right')) },
++      },
++    };
++  }
+ }

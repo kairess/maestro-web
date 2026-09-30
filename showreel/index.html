@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>Maestro Web Reel</title>
+<link rel="stylesheet" href="fonts/local.css" />
+<style>
+@font-face { font-family: Pretendard; font-weight: 100; src: url(fonts/Pretendard-Thin.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 300; src: url(fonts/Pretendard-Light.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 400; src: url(fonts/Pretendard-Regular.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 500; src: url(fonts/Pretendard-Medium.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 600; src: url(fonts/Pretendard-SemiBold.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 700; src: url(fonts/Pretendard-Bold.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 800; src: url(fonts/Pretendard-ExtraBold.woff2) format('woff2'); }
+@font-face { font-family: Pretendard; font-weight: 900; src: url(fonts/Pretendard-Black.woff2) format('woff2'); }
+
+:root {
+  --ink: #07060a;
+  --ink2: #0d0b12;
+  --gold: #ffc21f;
+  --amber: #ffb454;
+  --cream: #f4ede4;
+  --muted: #a99d92;
+  --cyan: #5cc8ff;
+  --red: #ff3b30;
+  --kr: Pretendard, 'Apple SD Gothic Neo', sans-serif;
+  --serif: 'Playfair Display', Georgia, serif;
+  --krserif: 'Noto Serif KR', serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+body { font-family: var(--kr); color: var(--cream); -webkit-font-smoothing: antialiased; }
+#frame { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--ink); }
+#world { position: absolute; inset: -40px; transform-origin: 50% 50%; }
+#world > * { position: absolute; left: 40px; top: 40px; width: 1920px; height: 1080px; }
+canvas { display: block; }
+.scene { overflow: hidden; }
+.abs { position: absolute; }
+.overlay { position: absolute; inset: 0; pointer-events: none; }
+
+/* text helpers */
+.kicker { font-family: var(--mono); font-weight: 500; font-size: 20px; letter-spacing: .22em; color: var(--gold); text-transform: uppercase; display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+.kicker b { font-weight: 700; color: var(--cream); letter-spacing: .1em; }
+.kicker .rule { display: inline-block; height: 2px; width: 64px; background: var(--gold); transform-origin: 0 50%; }
+.headline { font-weight: 900; letter-spacing: -.035em; line-height: 1.06; color: var(--cream); white-space: nowrap; }
+.headline .g { color: var(--gold); }
+.line { display: block; overflow: hidden; padding: .04em .02em .1em; margin: -.04em -.02em -.1em; }
+.line > span { display: inline-block; will-change: transform; }
+.sub { font-weight: 500; color: var(--muted); letter-spacing: -.01em; white-space: nowrap; }
+.mono { font-family: var(--mono); }
+.char { display: inline-block; white-space: pre; }
+
+/* cold open */
+.bigword { position: absolute; left: 0; right: 0; top: 0; height: 1080px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 176px; letter-spacing: -.04em; color: var(--cream); white-space: nowrap; }
+.bigword.serif { font-family: var(--krserif); font-weight: 900; letter-spacing: -.02em; color: var(--gold); font-size: 200px; }
+.caption { position: absolute; left: 0; right: 0; top: 760px; text-align: center; font-family: var(--mono); font-size: 19px; letter-spacing: .32em; color: rgba(244,237,228,.55); white-space: nowrap; }
+.caption em { font-style: normal; color: var(--gold); }
+
+/* logo */
+.logo { position: absolute; white-space: nowrap; font-family: var(--serif); font-weight: 900; color: var(--cream); letter-spacing: .12em; line-height: 1; }
+.logo .web { position: absolute; font-family: var(--mono); font-weight: 500; color: var(--gold); letter-spacing: .45em; }
+
+/* browser window */
+.win { position: absolute; width: 1280px; height: 764px; border-radius: 16px; overflow: hidden; background: #0b0a10; border: 1px solid rgba(255,255,255,.14); box-shadow: 0 40px 120px rgba(0,0,0,.75), 0 0 0 1px rgba(0,0,0,.6); transform-origin: 50% 50%; }
+.win .bar { height: 44px; display: flex; align-items: center; gap: 9px; padding: 0 18px; background: linear-gradient(#1b1920, #141218); border-bottom: 1px solid rgba(255,255,255,.07); }
+.win .bar i { width: 12px; height: 12px; border-radius: 50%; background: #3a3640; }
+.win .bar i:nth-child(1) { background: #ff5f57; } .win .bar i:nth-child(2) { background: #febc2e; } .win .bar i:nth-child(3) { background: #28c840; }
+.win .url { margin-left: 22px; flex: 1; max-width: 560px; height: 28px; border-radius: 8px; background: rgba(255,255,255,.06); font-family: var(--mono); font-size: 15px; color: rgba(244,237,228,.7); display: flex; align-items: center; padding: 0 14px; gap: 8px; letter-spacing: .02em; }
+.win .url b { color: var(--cream); font-weight: 500; }
+.win .view { position: relative; width: 1280px; height: 720px; background: #151b24; overflow: hidden; }
+.win .view img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.win .glare { position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 70%, rgba(255,210,140,.06) 100%); pointer-events: none; }
+
+.cam { position: absolute; width: 384px; height: 216px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,.22); box-shadow: 0 24px 60px rgba(0,0,0,.7); background: #0b0f14; }
+.cam .tag { position: absolute; left: 12px; top: 10px; font-family: var(--mono); font-size: 13px; letter-spacing: .2em; color: rgba(255,255,255,.85); display: flex; align-items: center; gap: 8px; }
+.cam .tag i { width: 9px; height: 9px; border-radius: 50%; background: var(--red); box-shadow: 0 0 10px var(--red); }
+
+/* icons rows (left hand) */
+.row { position: absolute; display: flex; align-items: center; gap: 30px; }
+.row .ico { width: 124px; height: 124px; flex: none; border-radius: 22px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.10); position: relative; }
+.row .ico canvas { position: absolute; inset: 0; }
+.row h4 { margin: 0; font-size: 46px; font-weight: 800; letter-spacing: -.03em; white-space: nowrap; }
+.row h4 small { font-family: var(--mono); font-size: 16px; font-weight: 500; letter-spacing: .18em; color: var(--gold); margin-left: 14px; vertical-align: middle; }
+.row p { margin: 6px 0 0; font-size: 26px; font-weight: 500; color: var(--muted); letter-spacing: -.01em; white-space: nowrap; }
+
+/* judge panels */
+.panel { position: absolute; width: 470px; height: 500px; border-radius: 28px; background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.12); box-shadow: 0 30px 80px rgba(0,0,0,.55); overflow: hidden; }
+.panel canvas { position: absolute; left: 0; top: 0; }
+.panel .lbl { position: absolute; left: 36px; bottom: 34px; font-size: 54px; font-weight: 900; letter-spacing: -.03em; }
+.panel .val { position: absolute; right: 36px; bottom: 44px; font-family: var(--mono); font-size: 26px; font-weight: 700; color: var(--gold); letter-spacing: .04em; }
+.panel .num { position: absolute; left: 36px; top: 30px; font-family: var(--mono); font-size: 16px; letter-spacing: .25em; color: rgba(244,237,228,.45); }
+.perfect { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-style: italic; font-weight: 900; font-size: 250px; letter-spacing: .02em; line-height: 1; background: linear-gradient(180deg, #fff6d6 0%, #ffd35a 45%, #e59a12 100%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 40px rgba(255,194,31,.55)); white-space: nowrap; }
+
+/* fail */
+.plaque { position: absolute; padding: 12px; border-radius: 10px; background: linear-gradient(160deg, #e9c877 0%, #b8893a 35%, #7a5620 70%, #c79e4f 100%); box-shadow: 0 14px 40px rgba(0,0,0,.7), inset 0 2px 0 rgba(255,245,210,.7), inset 0 -3px 0 rgba(60,35,5,.6); }
+.gauge { position: relative; width: 616px; height: 46px; border-radius: 5px; overflow: hidden; background: linear-gradient(90deg, #e2433a 0%, #f0a33a 38%, #d8e04a 60%, #3fd46a 100%); box-shadow: inset 0 3px 8px rgba(0,0,0,.55); }
+.gauge::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,0) 45%, rgba(0,0,0,.2)); }
+.gauge .cover { position: absolute; top: 0; right: 0; bottom: 0; background: #151210; }
+.miss { position: absolute; font-family: var(--serif); font-weight: 900; font-size: 64px; letter-spacing: .18em; color: #b9b3ad; text-shadow: 0 4px 20px rgba(0,0,0,.8); white-space: nowrap; }
+.miss.r { color: var(--red); }
+.wavebox { position: absolute; border-radius: 22px; background: rgba(8,7,12,.72); border: 1px solid rgba(255,255,255,.12); backdrop-filter: blur(8px); overflow: hidden; }
+.wavebox canvas { position: absolute; left: 0; top: 0; }
+
+/* chips */
+.chip { position: absolute; padding: 20px 26px 20px 26px; border-radius: 18px; background: rgba(12,10,16,.72); border: 1px solid rgba(255,255,255,.14); backdrop-filter: blur(10px); white-space: nowrap; box-shadow: 0 18px 50px rgba(0,0,0,.5); }
+.chip b { display: block; font-size: 34px; font-weight: 800; letter-spacing: -.02em; }
+.chip b i { font-style: normal; display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--gold); margin-right: 12px; vertical-align: middle; box-shadow: 0 0 12px var(--gold); transform: translateY(-3px); }
+.chip span { display: block; margin-top: 6px; font-size: 21px; font-weight: 500; color: var(--muted); letter-spacing: -.01em; }
+
+/* end */
+.pill { position: absolute; left: 50%; transform: translateX(-50%); padding: 16px 30px; border-radius: 999px; border: 1.5px solid rgba(255,194,31,.7); font-family: var(--mono); font-size: 32px; font-weight: 500; color: var(--cream); letter-spacing: .02em; white-space: nowrap; background: rgba(255,194,31,.06); box-shadow: 0 0 40px rgba(255,194,31,.18); }
+.pill b { color: var(--gold); font-weight: 700; }
+
+/* global hud */
+#hud { position: absolute; inset: 0; pointer-events: none; font-family: var(--mono); color: rgba(244,237,228,.55); font-size: 15px; letter-spacing: .2em; }
+#hud .tl { position: absolute; left: 44px; top: 34px; }
+#hud .tl b { color: var(--cream); font-weight: 700; letter-spacing: .28em; }
+#hud .tl em { font-style: normal; color: var(--gold); }
+#hud .tr { position: absolute; right: 44px; top: 34px; text-align: right; }
+#hud .tr em { font-style: normal; color: var(--gold); }
+#hud .ticks { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); display: flex; gap: 8px; }
+#hud .ticks i { width: 22px; height: 3px; background: rgba(244,237,228,.22); border-radius: 2px; }
+#hud .br { position: absolute; right: 44px; bottom: 30px; }
+#hud .bl { position: absolute; left: 44px; bottom: 30px; }
+
+#flash { background: radial-gradient(ellipse at 50% 50%, #fff6e2 0%, #ffd9a0 70%, #ffb454 100%); opacity: 0; mix-blend-mode: screen; }
+#tint { opacity: 0; }
+#vignette { background: radial-gradient(ellipse 75% 70% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%); }
+#grain { opacity: .075; mix-blend-mode: overlay; background-size: 512px 512px; }
+#fade { background: #000; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="frame">
+  <div id="world">
+    <canvas id="bg" width="1920" height="1080"></canvas>
+    <div id="scenes"></div>
+    <canvas id="fx" width="1920" height="1080"></canvas>
+  </div>
+  <div id="tint" class="overlay"></div>
+  <div id="flash" class="overlay"></div>
+  <div id="vignette" class="overlay"></div>
+  <div id="grain" class="overlay"></div>
+  <div id="hud"></div>
+  <div id="fade" class="overlay"></div>
+</div>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="rgbsplit" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/>
+    <feOffset in="r" id="rgb-r" dx="-8" dy="0" result="ro"/>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="g"/>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="b"/>
+    <feOffset in="b" id="rgb-b" dx="8" dy="0" result="bo"/>
+    <feBlend in="ro" in2="g" mode="screen" result="rg"/>
+    <feBlend in="rg" in2="bo" mode="screen"/>
+  </filter>
+</svg>
+<script src="data.js"></script>
+<script src="reel.js"></script>
+</body>
+</html>

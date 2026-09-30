@@ -1,0 +1,8 @@
+node_modules/
+fonts/
+gameplay/
+build/
+out/
+preview/
+# 55 MB render output; remove this line to commit it
+maestro-web-showreel.mp4

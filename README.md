@@ -5,6 +5,10 @@ Conduct Verdi's *Dies Irae* with your hands: strokes with the right hand, cues, 
 
 **Play:** https://kairess.github.io/maestro-web/ (desktop Chrome/Edge, webcam required)
 
+<a href="showreel/maestro-web-showreel-web.mp4"><img src="showreel/highlights.webp" alt="Maestro Web showreel highlights" width="100%"></a>
+
+**Showreel:** [30 s video with sound](showreel/maestro-web-showreel-web.mp4) · made with HTML/Canvas and headless Chrome, see [showreel/](showreel/)
+
 ## Tech
 
 - **Vite + TypeScript**: static site, no UI framework (plain DOM HUD)
@@ -35,6 +39,8 @@ VR 지휘 리듬게임 *Maestro* 에서 영감을 받은 브라우저용 웹캠 
 오른손으로 박자를 젓고, 왼손으로 큐·다이내믹스·페르마타를 표현하며 베르디 *Dies Irae* 를 지휘합니다.
 
 **플레이:** https://kairess.github.io/maestro-web/ (데스크톱 Chrome/Edge, 웹캠 필요)
+
+**쇼릴:** [30초 영상 (소리 포함)](showreel/maestro-web-showreel-web.mp4) · 맨 위 미리보기를 누르면 재생됩니다. 제작 방법은 [showreel/](showreel/)에 있습니다.
 
 ## 사용 기술
 
