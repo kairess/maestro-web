@@ -20,7 +20,8 @@ const errors = [];
 page.on('pageerror', (e) => errors.push(`[pageerror] ${e.message}`));
 page.on('console', (m) => m.type() === 'error' && errors.push(`[error] ${m.text()}`));
 
-await page.goto(`${url}?input=${process.env.INPUT ?? "bot"}`, { waitUntil: 'networkidle0' });
+const extra = process.env.QUERY ? `&${process.env.QUERY}` : ''; // e.g. QUERY=chart=Verdi_DiesIrae/Verdi_DiesIrae_Flat_Expert
+await page.goto(`${url}?input=${process.env.INPUT ?? "bot"}${extra}`, { waitUntil: 'networkidle0' });
 await page.click('#btn-start');
 await page.waitForFunction(() => document.querySelector('#hud')?.classList.contains('show'), { timeout: 30000 });
 const songZero = Date.now() + 3000; // preroll

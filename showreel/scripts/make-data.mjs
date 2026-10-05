@@ -23,7 +23,7 @@ for (let k = 0; k < 30 * 60; k++) { env.push(+rms(N, k / 60, (k + 1) / 60).toFix
 const wN = [], wF = [];
 for (let k = 0; k < 10 * 200; k++) { const t = 14 + k / 200; wN.push(+peak(N, t, t + 1 / 200).toFixed(3)); wF.push(+peak(F, t, t + 1 / 200).toFixed(3)); }
 
-const c = JSON.parse(readFileSync(join(PUB, 'charts/Verdi_DiesIrae_Hard.json'), 'utf8'));
+const c = JSON.parse(readFileSync(join(PUB, 'charts/Verdi_DiesIrae/Verdi_DiesIrae_Flat_Hard.json'), 'utf8'));
 const layout = JSON.parse(readFileSync(join(PUB, 'stage/layout.json'), 'utf8')).instruments;
 const data = {
   beats: c.beat_times.filter((t) => t < 32).map((t) => +t.toFixed(4)),

@@ -22,8 +22,58 @@ export async function loadLayout(url: string): Promise<StageLayout> {
   return { video: raw.video ?? null, image: raw.image ?? null, instruments: raw.instruments ?? {} };
 }
 
+/** Release-chart names for sections the layout already knows under another name. */
+const ALIASES: Record<string, string> = {
+  Picolo: 'Flute',
+  Piccolo: 'Flute',
+  Clarinette: 'Clarinet',
+  BassClarinette: 'Clarinet',
+  Bassoon: 'Basson',
+  ContraBassoon: 'Basson',
+  Violin1: 'Violins_1',
+  ViolinSolo: 'Violins_1',
+  Violin2: 'Violins_2',
+  Cello: 'Violoncello',
+  CelloSolo: 'Violoncello',
+  FrenchHorn: 'Horns',
+  Saxophone: 'Brass',
+  BassDrum: 'Percussion',
+  SnareDrum: 'Percussion',
+  Drum: 'Percussion',
+  Cymbals: 'Percussion',
+  Triangle: 'Percussion',
+  Taiko: 'Percussion',
+  Xylophone: 'Percussion',
+  Glockenspiel: 'Percussion',
+  Offstage_Bells: 'Percussion',
+  Piano: 'Keyboard',
+  Celesta: 'Keyboard',
+  Harpsichord: 'Keyboard',
+  Choir_Left_Solist: 'Choir_Left',
+  Tutti: 'Choir_Tutti',
+};
+
+/**
+ * Release charts aim dynamics and focus at stage anchors named by their angle around the podium:
+ * "Score_400_65" (VR) or "Score_Flat_75" (flat screen). 90° is straight ahead, smaller angles are
+ * to the conductor's left (40° = left choir), larger to the right.
+ */
+function anchorPosition(layout: StageLayout, name: string): StagePosition | null {
+  const m = /^Score_(?:Flat|\d+)_(\d+)$/.exec(name);
+  if (!m) return null;
+  const angle = Number(m[1]);
+  const x = Math.max(-1, Math.min(1, (angle - 90) / 60));
+  // Place it on the backdrop next to the layout section closest in x (mid-stage rows).
+  let best: StagePosition | null = null;
+  for (const p of Object.values(layout.instruments)) {
+    if (p.y < 0.3 || p.y > 0.8) continue;
+    if (!best || Math.abs(p.x - x) < Math.abs(best.x - x)) best = p;
+  }
+  return { x, y: 0.5, u: best?.u, v: best?.v };
+}
+
 export function positionOf(layout: StageLayout, instrument: string): StagePosition {
-  return layout.instruments[instrument] ?? FALLBACK;
+  return layout.instruments[instrument] ?? layout.instruments[ALIASES[instrument] ?? ''] ?? anchorPosition(layout, instrument) ?? FALLBACK;
 }
 
 export function azimuthOf(layout: StageLayout, instrument: string): number {
@@ -32,7 +82,9 @@ export function azimuthOf(layout: StageLayout, instrument: string): number {
 
 /** Human-friendly label (Choir_Tutti → Choir Tutti). */
 export function labelOf(instrument: string): string {
-  return instrument.replace(/_/g, ' ');
+  if (/^Score_/.test(instrument)) return ''; // stage anchor, not a section name
+  const pretty: Record<string, string> = { Picolo: 'Piccolo', Clarinette: 'Clarinet', Basson: 'Bassoon', Violin1: 'Violins 1', Violin2: 'Violins 2', FrenchHorn: 'Horns' };
+  return pretty[instrument] ?? instrument.replace(/_/g, ' ');
 }
 
 /**

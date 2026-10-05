@@ -17,6 +17,8 @@ function snap(t: number, right: HandSample | null = null, left: HandSample | nul
 function chartWith(gestures: { time: number; tokens: Token[]; type?: 'Normal' | 'Accent' }[]): Chart {
   return {
     name: 'test',
+    songDir: 'test',
+    flatScreen: false,
     audio: ['a.ogg'],
     applauseTime: null,
     numInitialBeatsToSkip: 0,
@@ -161,7 +163,7 @@ describe('expression judging', () => {
 
   it('crescendo: a small rise held to the end is perfect, even if it starts mid-span', () => {
     const chart = chartWith([]);
-    chart.dynamics = [{ id: 0, type: 'Crescendo', instrument: 'Flute', begin: 0, end: 1, time: [1, 2] }];
+    chart.dynamics = [{ id: 0, type: 'Crescendo', instrument: 'Flute', musicians: [], begin: 0, end: 1, time: [1, 2] }];
     // Flat until 1.5s, then rises 8cm and stays.
     const ev = runLeft(chart, (t) => (t < 1.5 ? -0.3 : -0.3 + Math.min(0.08, (t - 1.5) * 0.4)));
     expect(ev[0].kind).toBe('dynamics');
@@ -170,7 +172,7 @@ describe('expression judging', () => {
 
   it('crescendo: rising then sinking back is only good; lowering is a miss', () => {
     const chart = chartWith([]);
-    chart.dynamics = [{ id: 0, type: 'Crescendo', instrument: 'Flute', begin: 0, end: 1, time: [1, 2] }];
+    chart.dynamics = [{ id: 0, type: 'Crescendo', instrument: 'Flute', musicians: [], begin: 0, end: 1, time: [1, 2] }];
     const bounce = runLeft(chart, (t) => (t < 1.3 ? -0.3 : t < 1.6 ? -0.2 : -0.3));
     expect(bounce[0].grade).toBe('good');
     const down = runLeft(chart, (t) => -0.3 - Math.max(0, t - 1) * 0.1);
@@ -179,7 +181,7 @@ describe('expression judging', () => {
 
   it('decrescendo mirrors crescendo', () => {
     const chart = chartWith([]);
-    chart.dynamics = [{ id: 0, type: 'Decrescendo', instrument: 'Choir', begin: 0, end: 1, time: [1, 2] }];
+    chart.dynamics = [{ id: 0, type: 'Decrescendo', instrument: 'Choir', musicians: [], begin: 0, end: 1, time: [1, 2] }];
     expect(runLeft(chart, (t) => -0.1 - Math.max(0, t - 1.2) * 0.2)[0].grade).toBe('perfect');
     expect(runLeft(chart, (t) => -0.3 + Math.max(0, t - 1) * 0.2)[0].grade).toBe('miss');
   });

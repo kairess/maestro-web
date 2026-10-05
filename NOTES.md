@@ -84,3 +84,17 @@ Left/RightTipRelativeLocation (30,±20,-18) ← 컨트롤러 → 지휘봉 끝 �
 없는 파라미터가 있다: `EvaluationWindow`, `FailedBeatTolerance`, `LastBeatTolerance`, `AutoValidatedBeatFromEnd`, `FermataEndValidationAngle`.
 
 **설계 요약**: 제스처 하나는 "방향(±35° 원뿔) + 최소 속도 + 시간창(±0.2s)"으로 판정한다. 악센트는 속도 문턱값만 2배로 올린다. 다이내믹스는 손바닥 방향이 게이트 역할을 하고, 수직 속도를 연속 점수로 매핑한다.
+
+## 7. 정식 출시판 채보 (2026-10 교체)
+데모 채보(`charts/<이름>.json`)를 정식 출시판(`charts/<곡>/<이름>.json`)으로 교체했다. 분석 결과는 다음과 같다.
+
+- **구성**: 곡마다 `Easy / Medium / Hard / Expert` 와 그 `Flat_` 변형, `MC_` 채보가 있다. `_index.json` 은 21곡의 목록이지만 지금 로컬에는 Verdi 만 있다.
+  - `Flat_` 은 원작 플랫 스크린(비 VR) 모드용이다. 노트·큐는 VR 판과 같고(Easy 끝부분 2개만 다름), 다이내믹스·포커스가 가리키는 무대 앵커만 다르다. 웹캠 게임도 플랫 스크린이라 기본값으로 쓴다(`?variant=vr` 로 VR 판).
+  - `MC_` 는 노트·큐·다이내믹스가 Easy 와 완전히 같아서 따로 쓰지 않는다.
+- **새 필드**: `song_dir`, `flat_screen`, `hash`, `camera_anchor_overrides`, `map`. `fermatas` 목록은 없어졌다.
+- **다이내믹스 종류**: `Crescendo`, `Decrescendo` 에 `Sustain`, `Cut`, `Contain` 이 추가됐다.
+  - 데모의 페르마타는 `Sustain`(유지) 뒤에 1박짜리 `Cut`(끊기)이 붙는 형태로 바뀌었다.
+  - `Contain` 은 오케스트라를 눌러 두는 표현으로 해석했다(손을 차분히, 올리지 않기).
+- **무대 앵커**: 다이내믹스·포커스의 `instrument` 는 `Score_400_65`, `Score_Flat_75` 같은 앵커다. 숫자는 지휘대 기준 각도로, 90 이 정면, 작을수록 왼쪽(40 = 왼쪽 합창단), 클수록 오른쪽이다. 실제 연주자는 `musicians` 에 따로 있다.
+- **3토큰 제스처**(`Down/Down/Down` 등, 전부 Accent): 원작 영상에서 오른쪽 박자선에 금색 악센트 노트 하나로 나온다. 그래서 오른손 악센트 하나로 판정한다.
+- **오디오**: 새 `Verdi_DiesIrae.ogg` 는 데모와 길이·타이밍이 같다(교차상관 지연 0). 80~200초 구간의 믹스만 다르다. 그래서 데모의 `_Fail.ogg` 를 그대로 써도 맞는다. 박 그리드는 같은 연주를 다시 찍은 것이라 200번째 박 부근부터 7박이 늘었다. 새 채보의 노트는 새 음원의 강세 박에 정확히 맞는다.

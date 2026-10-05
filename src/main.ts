@@ -1,3 +1,4 @@
+import { chartPath, difficultyOf, normalizeChartName, SONGS } from './chart/catalog';
 import { loadChart } from './chart/loader';
 import type { Chart } from './chart/types';
 import { EASY_PROFILE, ORIGINAL_PROFILE, TRACKING, applyQueryOverrides, type JudgeProfile } from './config';
@@ -30,12 +31,20 @@ interface AppState {
 
 const overrides = applyQueryOverrides();
 const state: AppState = {
-  chartName: new URLSearchParams(location.search).get('chart') ?? 'Verdi_DiesIrae_Easy',
+  chartName: normalizeChartName(new URLSearchParams(location.search).get('chart') ?? chartPath(SONGS[0], 'Easy')),
   input: (['camera', 'keys', 'bot'].includes(overrides.input) ? overrides.input : 'camera') as InputMode,
   debug: overrides.debug,
   profile: overrides.profile,
 };
 if (overrides.bot) state.input = 'bot';
+state.profile = profileFor(state.chartName);
+
+/** Easy/Medium get the lenient webcam profile; Hard/Expert the original game's values (?profile=original forces them). */
+function profileFor(chartName: string): JudgeProfile {
+  if (new URLSearchParams(location.search).get('profile') === 'original') return ORIGINAL_PROFILE;
+  const d = difficultyOf(chartName);
+  return d === 'Easy' || d === 'Medium' ? EASY_PROFILE : ORIGINAL_PROFILE;
+}
 
 // ---------------------------------------------------------------- shared objects
 
@@ -58,6 +67,7 @@ let cameraStream: MediaStream | null = null;
 let chart: Chart | null = null;
 let audio: SongAudio | null = null;
 let loadedFor = '';
+let loadedAudio = '';
 
 function showScreen(id: string | null): void {
   for (const s of document.querySelectorAll<HTMLElement>('.screen')) s.classList.toggle('show', s.id === id);
@@ -80,9 +90,8 @@ function bindSegment(id: string, attr: string, onChange: (v: string) => void): v
 }
 
 bindSegment('chart-select', 'chart', (v) => {
-  state.chartName = v;
-  state.profile = v.endsWith('Easy') ? EASY_PROFILE : ORIGINAL_PROFILE;
-  if (new URLSearchParams(location.search).get('profile') === 'original') state.profile = ORIGINAL_PROFILE;
+  state.chartName = chartPath(SONGS[0], difficultyOf(v));
+  state.profile = profileFor(state.chartName);
 });
 bindSegment('input-select', 'input', (v) => (state.input = v as InputMode));
 bindSegment('track-select', 'track', (v) => {
@@ -94,7 +103,7 @@ bindSegment('track-select', 'track', (v) => {
 });
 for (const b of $('track-select').querySelectorAll('button')) b.classList.toggle('active', b.dataset.track === TRACKING.mode);
 for (const b of $('input-select').querySelectorAll('button')) b.classList.toggle('active', b.dataset.input === state.input);
-for (const b of $('chart-select').querySelectorAll('button')) b.classList.toggle('active', b.dataset.chart === state.chartName);
+for (const b of $('chart-select').querySelectorAll('button')) b.classList.toggle('active', b.dataset.chart === difficultyOf(state.chartName));
 const latencyInput = $<HTMLInputElement>('latency');
 latencyInput.value = String(TRACKING.inputLatencyMs);
 latencyInput.addEventListener('change', () => {
@@ -126,7 +135,12 @@ async function ensureLoaded(): Promise<void> {
   if (loadedFor !== state.chartName) {
     setStatus('채보와 음원을 불러오는 중…');
     chart = await loadChart(`${BASE}/charts/${state.chartName}.json`);
-    audio = await SongAudio.load(ctx, `${BASE}/${chart.audio[0]}`, chart.audio[1] ? `${BASE}/${chart.audio[1]}` : undefined);
+    // All difficulties of a song share the audio: decode it only once.
+    const audioKey = chart.audio.join('|');
+    if (audioKey !== loadedAudio) {
+      audio = await SongAudio.load(ctx, `${BASE}/${chart.audio[0]}`, chart.audio[1] ? `${BASE}/${chart.audio[1]}` : undefined);
+      loadedAudio = audioKey;
+    }
     loadedFor = state.chartName;
   }
 }

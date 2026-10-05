@@ -1,0 +1,1879 @@
+{
+ "tracks": {
+  "Beethoven_5thSymph_Part1": {
+   "Easy": "Map_Beethoven_5thSymph_Part1_Easy",
+   "Medium": "Map_Beethoven_5thSymph_Part1_Medium",
+   "Hard": "Map_Beethoven_5thSymph_Part1_Hard",
+   "Expert": "Map_Beethoven_5thSymph_Part1_Expert"
+  },
+  "Beethoven_5thSymph_Part2": {
+   "Easy": "Map_Beethoven_5thSymph_Part2_Easy",
+   "Medium": "Map_Beethoven_5thSymph_Part2_Medium",
+   "Hard": "Map_Beethoven_5thSymph_Part2_Hard",
+   "Expert": "Map_Beethoven_5thSymph_Part2_Expert"
+  },
+  "DukeEllington_Caravan": {
+   "Easy": "Map_DukeEllington_Caravan_Easy",
+   "Medium": "Map_DukeEllington_Caravan_Medium",
+   "Hard": "Map_DukeEllington_Caravan_Hard",
+   "Expert": "Map_DukeEllington_Caravan_Expert"
+  },
+  "Dvorak_FromTheNewWorld": {
+   "Easy": "Map_Dvorak_FromTheNewWorld_Easy",
+   "Medium": "Map_Dvorak_FromTheNewWorld_Medium",
+   "Hard": "Map_Dvorak_FromTheNewWorld_Hard",
+   "Expert": "Map_Dvorak_FromTheNewWorld_Expert"
+  },
+  "HankLevy_Whiplash": {
+   "Easy": "Map_HankLevy_Whiplash_Easy",
+   "Medium": "Map_HankLevy_Whiplash_Medium",
+   "Hard": "Map_HankLevy_Whiplash_Hard",
+   "Expert": "Map_HankLevy_Whiplash_Expert"
+  },
+  "Mendelssohn_TheHebrides_Part1": {
+   "Easy": "Map_Mendelssohn_TheHebrides_Part1_Easy",
+   "Medium": "Map_Mendelssohn_TheHebrides_Part1_Medium",
+   "Hard": "Map_Mendelssohn_TheHebrides_Part1_Hard",
+   "Expert": "Map_Mendelssohn_TheHebrides_Part1_Expert"
+  },
+  "Mendelssohn_TheHebrides_Part2": {
+   "Easy": "Map_Mendelssohn_TheHebrides_Part2_Easy",
+   "Medium": "Map_Mendelssohn_TheHebrides_Part2_Medium",
+   "Hard": "Map_Mendelssohn_TheHebrides_Part2_Hard",
+   "Expert": "Map_Mendelssohn_TheHebrides_Part2_Expert"
+  },
+  "Moussorgski_NightOnABaldMountain_Part1": {
+   "Easy": "Map_Moussorgski_NightOnABaldMountain_Part1_Easy",
+   "Medium": "Map_Moussorgski_NightOnABaldMountain_Part1_Medium",
+   "Hard": "Map_Moussorgski_NightOnABaldMountain_Part1_Hard",
+   "Expert": "Map_Moussorgski_NightOnABaldMountain_Part1_Expert"
+  },
+  "Moussorgski_NightOnABaldMountain_Part2": {
+   "Easy": "Map_Moussorgski_NightOnABaldMountain_Part2_Easy",
+   "Medium": "Map_Moussorgski_NightOnABaldMountain_Part2_Medium",
+   "Hard": "Map_Moussorgski_NightOnABaldMountain_Part2_Hard",
+   "Expert": "Map_Moussorgski_NightOnABaldMountain_Part2_Expert"
+  },
+  "Mozart_FigaroWedding": {
+   "Easy": "Map_Mozart_FigaroWedding_Easy",
+   "Medium": "Map_Mozart_FigaroWedding_Medium",
+   "Hard": "Map_Mozart_FigaroWedding_Hard",
+   "Expert": "Map_Mozart_FigaroWedding_Expert"
+  },
+  "Orff_CarminaBurana_OFortuna": {
+   "Easy": "Map_Orff_CarminaBurana_OFortuna_Easy",
+   "Medium": "Map_Orff_CarminaBurana_OFortuna_Medium",
+   "Hard": "Map_Orff_CarminaBurana_OFortuna_Hard",
+   "Expert": "Map_Orff_CarminaBurana_OFortuna_Expert"
+  },
+  "Orff_CarminaBurana_PlangoVulnera": {
+   "Easy": "Map_Orff_CarminaBurana_PlangoVulnera_Easy",
+   "Medium": "Map_Orff_CarminaBurana_PlangoVulnera_Medium",
+   "Hard": "Map_Orff_CarminaBurana_PlangoVulnera_Hard",
+   "Expert": "Map_Orff_CarminaBurana_PlangoVulnera_Expert"
+  },
+  "Prima_SingSingSing": {
+   "Easy": "Map_Prima_SingSingSing_Easy",
+   "Medium": "Map_Prima_SingSingSing_Medium",
+   "Hard": "Map_Prima_SingSingSing_Hard",
+   "Expert": "Map_Prima_SingSingSing_Expert"
+  },
+  "Prokofiev_BattleIce": {
+   "Easy": "Map_Prokofiev_BattleIce_Easy",
+   "Medium": "Map_Prokofiev_BattleIce_Medium",
+   "Hard": "Map_Prokofiev_BattleIce_Hard",
+   "Expert": "Map_Prokofiev_BattleIce_Expert"
+  },
+  "Prokofiev_DanceOfTheKnights": {
+   "Easy": "Map_Prokofiev_DanceOfTheKnights_Easy",
+   "Medium": "Map_Prokofiev_DanceOfTheKnights_Medium",
+   "Hard": "Map_Prokofiev_DanceOfTheKnights_Hard",
+   "Expert": "Map_Prokofiev_DanceOfTheKnights_Expert"
+  },
+  "SaintSaens_DanseMacabre": {
+   "Easy": "Map_SaintSaens_DanseMacabre_Easy",
+   "Medium": "Map_SaintSaens_DanseMacabre_Medium",
+   "Hard": "Map_SaintSaens_DanseMacabre_Hard",
+   "Expert": "Map_SaintSaens_DanseMacabre_Expert"
+  },
+  "Stravinsky_RiteOfSpring": {
+   "Easy": "Map_Stravinsky_RiteOfSpring_Easy",
+   "Medium": "Map_Stravinsky_RiteOfSpring_Medium",
+   "Hard": "Map_Stravinsky_RiteOfSpring_Hard",
+   "Expert": "Map_Stravinsky_RiteOfSpring_Expert"
+  },
+  "Tchaikovski_SwanLake": {
+   "Easy": "Map_Tchaikovski_SwanLake_Easy",
+   "Medium": "Map_Tchaikovski_SwanLake_Medium",
+   "Hard": "Map_Tchaikovski_SwanLake_Hard",
+   "Expert": "Map_Tchaikovski_SwanLake_Expert"
+  },
+  "Verdi_DiesIrae": {
+   "Easy": "Map_Verdi_DiesIrae_Easy",
+   "Medium": "Map_Verdi_DiesIrae_Medium",
+   "Hard": "Map_Verdi_DiesIrae_Hard",
+   "Expert": "Map_Verdi_DiesIrae_Expert"
+  },
+  "Vivaldi_Winter": {
+   "Easy": "Map_Vivaldi_Winter_Easy",
+   "Medium": "Map_Vivaldi_Winter_Medium",
+   "Hard": "Map_Vivaldi_Winter_Hard",
+   "Expert": "Map_Vivaldi_Winter_Expert"
+  },
+  "Wagner_RideOfTheValkyries": {
+   "Easy": "Map_Wagner_RideOfTheValkyries_Easy",
+   "Medium": "Map_Wagner_RideOfTheValkyries_Medium",
+   "Hard": "Map_Wagner_RideOfTheValkyries_Hard",
+   "Expert": "Map_Wagner_RideOfTheValkyries_Expert"
+  }
+ },
+ "scores": {
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Flat_Easy": {
+   "gestures": 171,
+   "cues": 61,
+   "beats": 811,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Flat_Expert": {
+   "gestures": 482,
+   "cues": 131,
+   "beats": 811,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Flat_Hard": {
+   "gestures": 344,
+   "cues": 117,
+   "beats": 811,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Flat_Medium": {
+   "gestures": 200,
+   "cues": 78,
+   "beats": 811,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Easy": {
+   "gestures": 171,
+   "cues": 61,
+   "beats": 811,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Expert": {
+   "gestures": 579,
+   "cues": 135,
+   "beats": 811,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Hard": {
+   "gestures": 344,
+   "cues": 117,
+   "beats": 811,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part1/Beethoven_5thSymph_Part1_Medium": {
+   "gestures": 200,
+   "cues": 78,
+   "beats": 811,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part1.ogg",
+    "full_audio/Beethoven_5thSymph_Part1/ScoreSoundAsset/Beethoven_5thSymph_Part1.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Flat_Easy": {
+   "gestures": 157,
+   "cues": 33,
+   "beats": 522,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Flat_Expert": {
+   "gestures": 361,
+   "cues": 84,
+   "beats": 522,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Flat_Hard": {
+   "gestures": 268,
+   "cues": 69,
+   "beats": 522,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Flat_Medium": {
+   "gestures": 179,
+   "cues": 44,
+   "beats": 522,
+   "flat": true,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Easy": {
+   "gestures": 157,
+   "cues": 33,
+   "beats": 522,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Expert": {
+   "gestures": 455,
+   "cues": 84,
+   "beats": 522,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Hard": {
+   "gestures": 268,
+   "cues": 69,
+   "beats": 522,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "Beethoven_5thSymph_Part2/Beethoven_5thSymph_Part2_Medium": {
+   "gestures": 179,
+   "cues": 44,
+   "beats": 522,
+   "flat": false,
+   "audio": [
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/Beethoven_5thSymph_Part2.ogg",
+    "full_audio/Beethoven_5thSymph_Part2/ScoreSoundAsset/FailMode_BEETHOVEN_-_5th_SYMPH_Part2.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Flat_Easy": {
+   "gestures": 215,
+   "cues": 58,
+   "beats": 842,
+   "flat": true,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Flat_Expert": {
+   "gestures": 572,
+   "cues": 138,
+   "beats": 842,
+   "flat": true,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Flat_Hard": {
+   "gestures": 482,
+   "cues": 130,
+   "beats": 842,
+   "flat": true,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Flat_Medium": {
+   "gestures": 330,
+   "cues": 84,
+   "beats": 842,
+   "flat": true,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Easy": {
+   "gestures": 215,
+   "cues": 58,
+   "beats": 846,
+   "flat": false,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Expert": {
+   "gestures": 656,
+   "cues": 140,
+   "beats": 842,
+   "flat": false,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Hard": {
+   "gestures": 482,
+   "cues": 130,
+   "beats": 846,
+   "flat": false,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "DukeEllington_Caravan/DukeEllington_Caravan_Medium": {
+   "gestures": 330,
+   "cues": 84,
+   "beats": 846,
+   "flat": false,
+   "audio": [
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/FailMode_DUKE_ELLINGTON_-_CARAVAN.ogg",
+    "full_audio/DukeEllington_Caravan/ScoreSoundAsset/DukeEllington_Caravan.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Flat_Easy": {
+   "gestures": 208,
+   "cues": 32,
+   "beats": 690,
+   "flat": true,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Flat_Expert": {
+   "gestures": 504,
+   "cues": 53,
+   "beats": 690,
+   "flat": true,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Flat_Hard": {
+   "gestures": 422,
+   "cues": 83,
+   "beats": 690,
+   "flat": true,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Flat_Medium": {
+   "gestures": 313,
+   "cues": 42,
+   "beats": 690,
+   "flat": true,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Easy": {
+   "gestures": 207,
+   "cues": 32,
+   "beats": 694,
+   "flat": false,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Expert": {
+   "gestures": 567,
+   "cues": 90,
+   "beats": 690,
+   "flat": false,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Hard": {
+   "gestures": 422,
+   "cues": 83,
+   "beats": 694,
+   "flat": false,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "Dvorak_FromTheNewWorld/Dvorak_FromTheNewWorld_Medium": {
+   "gestures": 313,
+   "cues": 42,
+   "beats": 694,
+   "flat": false,
+   "audio": [
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/FailMode_DVORAK_-_NEW_WORLD.ogg",
+    "full_audio/Dvorak_FromTheNewWorld/ScoreSoundAsset/Dvorak_FromTheNewWorld.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Flat_Easy": {
+   "gestures": 58,
+   "cues": 40,
+   "beats": 483,
+   "flat": true,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Flat_Expert": {
+   "gestures": 277,
+   "cues": 105,
+   "beats": 483,
+   "flat": true,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Flat_Hard": {
+   "gestures": 197,
+   "cues": 65,
+   "beats": 483,
+   "flat": true,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Flat_Medium": {
+   "gestures": 116,
+   "cues": 45,
+   "beats": 483,
+   "flat": true,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Easy": {
+   "gestures": 58,
+   "cues": 40,
+   "beats": 483,
+   "flat": false,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Expert": {
+   "gestures": 308,
+   "cues": 76,
+   "beats": 483,
+   "flat": false,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Hard": {
+   "gestures": 197,
+   "cues": 65,
+   "beats": 483,
+   "flat": false,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "HankLevy_Whiplash/HankLevy_Whiplash_Medium": {
+   "gestures": 116,
+   "cues": 45,
+   "beats": 483,
+   "flat": false,
+   "audio": [
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/HankLevy_Whiplash.ogg",
+    "full_audio/HankLevy_Whiplash/ScoreSoundAsset/FailMode_HANK_LEVY_-_WHIPLASH.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part1/Mendelssohn_TheHebrides_Part1_Easy": {
+   "gestures": 123,
+   "cues": 25,
+   "beats": 529,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/Mendelssohn_TheHebrides_Part1.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part1.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part1/Mendelssohn_TheHebrides_Part1_Expert": {
+   "gestures": 517,
+   "cues": 88,
+   "beats": 529,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/Mendelssohn_TheHebrides_Part1.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part1.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part1/Mendelssohn_TheHebrides_Part1_Hard": {
+   "gestures": 409,
+   "cues": 75,
+   "beats": 529,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/Mendelssohn_TheHebrides_Part1.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part1.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part1/Mendelssohn_TheHebrides_Part1_Medium": {
+   "gestures": 231,
+   "cues": 34,
+   "beats": 529,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/Mendelssohn_TheHebrides_Part1.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part1/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part1.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Flat_Easy": {
+   "gestures": 214,
+   "cues": 44,
+   "beats": 601,
+   "flat": true,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Flat_Expert": {
+   "gestures": 1,
+   "cues": 0,
+   "beats": 601,
+   "flat": true,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Flat_Hard": {
+   "gestures": 451,
+   "cues": 77,
+   "beats": 601,
+   "flat": true,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Flat_Medium": {
+   "gestures": 338,
+   "cues": 49,
+   "beats": 601,
+   "flat": true,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Easy": {
+   "gestures": 214,
+   "cues": 44,
+   "beats": 605,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Expert": {
+   "gestures": 1,
+   "cues": 0,
+   "beats": 601,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Hard": {
+   "gestures": 451,
+   "cues": 77,
+   "beats": 605,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Mendelssohn_TheHebrides_Part2/Mendelssohn_TheHebrides_Part2_Medium": {
+   "gestures": 338,
+   "cues": 49,
+   "beats": 605,
+   "flat": false,
+   "audio": [
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/Mendelssohn_TheHebrides_Part2.ogg",
+    "full_audio/Mendelssohn_TheHebrides_Part2/ScoreSoundAsset/FailMode_MENDELSSOHN_-_THE_HEBRIDES_Part2.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Flat_Easy": {
+   "gestures": 93,
+   "cues": 38,
+   "beats": 559,
+   "flat": true,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Flat_Expert": {
+   "gestures": 436,
+   "cues": 89,
+   "beats": 559,
+   "flat": true,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Flat_Hard": {
+   "gestures": 291,
+   "cues": 68,
+   "beats": 559,
+   "flat": true,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Flat_Medium": {
+   "gestures": 168,
+   "cues": 49,
+   "beats": 559,
+   "flat": true,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Easy": {
+   "gestures": 93,
+   "cues": 38,
+   "beats": 559,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Expert": {
+   "gestures": 369,
+   "cues": 69,
+   "beats": 559,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Hard": {
+   "gestures": 291,
+   "cues": 68,
+   "beats": 559,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part1/Moussorgski_NightOnABaldMountain_Part1_Medium": {
+   "gestures": 168,
+   "cues": 49,
+   "beats": 559,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part1.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part1/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part1.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part2/Moussorgski_NightOnABaldMountain_Part2_Flat_Hard": {
+   "gestures": 519,
+   "cues": 21,
+   "beats": 822,
+   "flat": true,
+   "audio": [
+    null
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part2/Moussorgski_NightOnABaldMountain_Part2_Flat_Medium": {
+   "gestures": 519,
+   "cues": 21,
+   "beats": 822,
+   "flat": true,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part2.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part2.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part2/Moussorgski_NightOnABaldMountain_Part2_Easy": {
+   "gestures": 62,
+   "cues": 39,
+   "beats": 826,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part2.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part2.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part2/Moussorgski_NightOnABaldMountain_Part2_Expert": {
+   "gestures": 500,
+   "cues": 66,
+   "beats": 822,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part2.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part2.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part2/Moussorgski_NightOnABaldMountain_Part2_Hard": {
+   "gestures": 331,
+   "cues": 59,
+   "beats": 826,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part2.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part2.ogg"
+   ]
+  },
+  "Moussorgski_NightOnABaldMountain_Part2/Moussorgski_NightOnABaldMountain_Part2_Medium": {
+   "gestures": 95,
+   "cues": 54,
+   "beats": 826,
+   "flat": false,
+   "audio": [
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/Moussorgski_NightOnABaldMountain_Part2.ogg",
+    "full_audio/Moussorgski_NightOnABaldMountain_Part2/ScoreSoundAsset/FailMode_Moussorgski_NightOnABaldMountain_Part2.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Flat_Easy": {
+   "gestures": 216,
+   "cues": 48,
+   "beats": 1205,
+   "flat": true,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Flat_Expert": {
+   "gestures": 182,
+   "cues": 0,
+   "beats": 1205,
+   "flat": true,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Flat_Hard": {
+   "gestures": 487,
+   "cues": 74,
+   "beats": 1205,
+   "flat": true,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Flat_Medium": {
+   "gestures": 296,
+   "cues": 50,
+   "beats": 1205,
+   "flat": true,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Easy": {
+   "gestures": 216,
+   "cues": 48,
+   "beats": 1200,
+   "flat": false,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Expert": {
+   "gestures": 587,
+   "cues": 94,
+   "beats": 1204,
+   "flat": false,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Hard": {
+   "gestures": 487,
+   "cues": 74,
+   "beats": 1200,
+   "flat": false,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Mozart_FigaroWedding/Mozart_FigaroWedding_Medium": {
+   "gestures": 296,
+   "cues": 50,
+   "beats": 1200,
+   "flat": false,
+   "audio": [
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/Mozart_FigaroWedding.ogg",
+    "full_audio/Mozart_FigaroWedding/ScoreSoundAsset/FailMode_MOZART_-_MARIAGE_FIGARO.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Flat_Easy": {
+   "gestures": 81,
+   "cues": 46,
+   "beats": 375,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Flat_Expert": {
+   "gestures": 283,
+   "cues": 63,
+   "beats": 375,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Flat_Hard": {
+   "gestures": 197,
+   "cues": 63,
+   "beats": 375,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Flat_Medium": {
+   "gestures": 106,
+   "cues": 56,
+   "beats": 375,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Easy": {
+   "gestures": 81,
+   "cues": 46,
+   "beats": 375,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Expert": {
+   "gestures": 310,
+   "cues": 84,
+   "beats": 375,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Hard": {
+   "gestures": 197,
+   "cues": 63,
+   "beats": 375,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_OFortuna/Orff_CarminaBurana_OFortuna_Medium": {
+   "gestures": 106,
+   "cues": 56,
+   "beats": 375,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/Orff_CarminaBurana_OFortuna.ogg",
+    "full_audio/Orff_CarminaBurana_OFortuna/ScoreSoundAsset/FailMode_ORFF_-_CARMINA_BURANA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Flat_Easy": {
+   "gestures": 168,
+   "cues": 51,
+   "beats": 751,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Flat_Expert": {
+   "gestures": 340,
+   "cues": 111,
+   "beats": 751,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Flat_Hard": {
+   "gestures": 249,
+   "cues": 103,
+   "beats": 751,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Flat_Medium": {
+   "gestures": 214,
+   "cues": 95,
+   "beats": 751,
+   "flat": true,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Easy": {
+   "gestures": 168,
+   "cues": 51,
+   "beats": 751,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Expert": {
+   "gestures": 330,
+   "cues": 116,
+   "beats": 751,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Hard": {
+   "gestures": 249,
+   "cues": 103,
+   "beats": 751,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Orff_CarminaBurana_PlangoVulnera/Orff_CarminaBurana_PlangoVulnera_Medium": {
+   "gestures": 214,
+   "cues": 95,
+   "beats": 751,
+   "flat": false,
+   "audio": [
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/Orff_CarminaBurana_PlangoVulnera.ogg",
+    "full_audio/Orff_CarminaBurana_PlangoVulnera/ScoreSoundAsset/FailMode_ORFF_-_PLANGO_VULNERA.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Flat_Easy": {
+   "gestures": 221,
+   "cues": 71,
+   "beats": 1104,
+   "flat": true,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Flat_Expert": {
+   "gestures": 729,
+   "cues": 55,
+   "beats": 1104,
+   "flat": true,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Flat_Hard": {
+   "gestures": 487,
+   "cues": 111,
+   "beats": 1104,
+   "flat": true,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Flat_Medium": {
+   "gestures": 329,
+   "cues": 77,
+   "beats": 1104,
+   "flat": true,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Easy": {
+   "gestures": 221,
+   "cues": 71,
+   "beats": 1104,
+   "flat": false,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Expert": {
+   "gestures": 1081,
+   "cues": 120,
+   "beats": 1108,
+   "flat": false,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Hard": {
+   "gestures": 487,
+   "cues": 111,
+   "beats": 1104,
+   "flat": false,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prima_SingSingSing/Prima_SingSingSing_Medium": {
+   "gestures": 329,
+   "cues": 77,
+   "beats": 1104,
+   "flat": false,
+   "audio": [
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/Prima_SingSingSing.ogg",
+    "full_audio/Prima_SingSingSing/ScoreSoundAsset/FailMode_PRIMA_-_SING_SING_SING.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Flat_Easy": {
+   "gestures": 114,
+   "cues": 59,
+   "beats": 554,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Flat_Expert": {
+   "gestures": 517,
+   "cues": 82,
+   "beats": 554,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Flat_Hard": {
+   "gestures": 508,
+   "cues": 78,
+   "beats": 554,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Flat_Medium": {
+   "gestures": 268,
+   "cues": 70,
+   "beats": 554,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Easy": {
+   "gestures": 106,
+   "cues": 59,
+   "beats": 554,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Expert": {
+   "gestures": 538,
+   "cues": 90,
+   "beats": 558,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Hard": {
+   "gestures": 488,
+   "cues": 79,
+   "beats": 554,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_BattleIce/Prokofiev_BattleIce_Medium": {
+   "gestures": 252,
+   "cues": 65,
+   "beats": 554,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/Prokofiev_BattleIce_Stereo.ogg",
+    "full_audio/Prokofiev_BattleIce/ScoreSoundAsset/FailMode_Prokofiev_BattleIce.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Flat_Easy": {
+   "gestures": 127,
+   "cues": 22,
+   "beats": 347,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Flat_Expert": {
+   "gestures": 284,
+   "cues": 55,
+   "beats": 347,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Flat_Hard": {
+   "gestures": 259,
+   "cues": 55,
+   "beats": 347,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Flat_Medium": {
+   "gestures": 199,
+   "cues": 37,
+   "beats": 347,
+   "flat": true,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Easy": {
+   "gestures": 127,
+   "cues": 22,
+   "beats": 347,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Expert": {
+   "gestures": 290,
+   "cues": 56,
+   "beats": 351,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Hard": {
+   "gestures": 259,
+   "cues": 55,
+   "beats": 347,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "Prokofiev_DanceOfTheKnights/Prokofiev_DanceOfTheKnights_Medium": {
+   "gestures": 199,
+   "cues": 37,
+   "beats": 347,
+   "flat": false,
+   "audio": [
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/Prokofiev_DanceOfTheKnights.ogg",
+    "full_audio/Prokofiev_DanceOfTheKnights/ScoreSoundAsset/FailMode_PROKOFIEV_-_DANCE_OF_THE_KNIGHT.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Flat_Easy": {
+   "gestures": 259,
+   "cues": 72,
+   "beats": 1266,
+   "flat": true,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Flat_Expert": {
+   "gestures": 509,
+   "cues": 101,
+   "beats": 1262,
+   "flat": true,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Flat_Hard": {
+   "gestures": 663,
+   "cues": 150,
+   "beats": 1266,
+   "flat": true,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Flat_Medium": {
+   "gestures": 397,
+   "cues": 84,
+   "beats": 1266,
+   "flat": true,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Easy": {
+   "gestures": 259,
+   "cues": 72,
+   "beats": 1266,
+   "flat": false,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Expert": {
+   "gestures": 947,
+   "cues": 130,
+   "beats": 1266,
+   "flat": false,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Hard": {
+   "gestures": 663,
+   "cues": 150,
+   "beats": 1266,
+   "flat": false,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "SaintSaens_DanseMacabre/SaintSaens_DanseMacabre_Medium": {
+   "gestures": 397,
+   "cues": 84,
+   "beats": 1266,
+   "flat": false,
+   "audio": [
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/SaintSaens_DanseMacabre.ogg",
+    "full_audio/SaintSaens_DanseMacabre/ScoreSoundAsset/FailMode_ST_SAENS_-_DANSE_MACABRE.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Flat_Easy": {
+   "gestures": 165,
+   "cues": 77,
+   "beats": 1230,
+   "flat": true,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Flat_Expert": {
+   "gestures": 1,
+   "cues": 0,
+   "beats": 1230,
+   "flat": true,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Flat_Hard": {
+   "gestures": 497,
+   "cues": 123,
+   "beats": 1230,
+   "flat": true,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Flat_Medium": {
+   "gestures": 249,
+   "cues": 107,
+   "beats": 1230,
+   "flat": true,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Easy": {
+   "gestures": 165,
+   "cues": 77,
+   "beats": 1230,
+   "flat": false,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Expert": {
+   "gestures": 665,
+   "cues": 142,
+   "beats": 1234,
+   "flat": false,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Hard": {
+   "gestures": 498,
+   "cues": 123,
+   "beats": 1230,
+   "flat": false,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Stravinsky_RiteOfSpring/Stravinsky_RiteOfSpring_Medium": {
+   "gestures": 249,
+   "cues": 107,
+   "beats": 1230,
+   "flat": false,
+   "audio": [
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/Stravinsky_RiteOfSpring.ogg",
+    "full_audio/Stravinsky_RiteOfSpring/ScoreSoundAsset/FailMode_STRAVINSKY_-_SACRE_PRINTEMPS.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Flat_Easy": {
+   "gestures": 109,
+   "cues": 12,
+   "beats": 299,
+   "flat": true,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Flat_Expert": {
+   "gestures": 236,
+   "cues": 51,
+   "beats": 299,
+   "flat": true,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Flat_Hard": {
+   "gestures": 201,
+   "cues": 32,
+   "beats": 299,
+   "flat": true,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Flat_Medium": {
+   "gestures": 162,
+   "cues": 18,
+   "beats": 299,
+   "flat": true,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Easy": {
+   "gestures": 109,
+   "cues": 12,
+   "beats": 299,
+   "flat": false,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Expert": {
+   "gestures": 257,
+   "cues": 51,
+   "beats": 299,
+   "flat": false,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Hard": {
+   "gestures": 201,
+   "cues": 32,
+   "beats": 299,
+   "flat": false,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tchaikovski_SwanLake/Tchaikovski_SwanLake_Medium": {
+   "gestures": 162,
+   "cues": 18,
+   "beats": 299,
+   "flat": false,
+   "audio": [
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/Tchaikovski_SwanLake.ogg",
+    "full_audio/Tchaikovski_SwanLake/ScoreSoundAsset/FailMode_TCHAIKOVSKI_-_SWAN_LAKE.ogg"
+   ]
+  },
+  "Tutorial_MC_Accents/Tutorial_Flat_MC_Accents": {
+   "gestures": 37,
+   "cues": 0,
+   "beats": 121,
+   "flat": true,
+   "audio": [
+    "full_audio/Tutorial_MC_Accents/Tutorial_MC_Accents.ogg"
+   ]
+  },
+  "Tutorial_MC_Accents/Tutorial_MC_Accents": {
+   "gestures": 49,
+   "cues": 0,
+   "beats": 121,
+   "flat": false,
+   "audio": [
+    "full_audio/Tutorial_MC_Accents/Tutorial_MC_Accents.ogg"
+   ]
+  },
+  "Tutorial_MC_Cues/Tutorial_Flat_MC_Cues": {
+   "gestures": 40,
+   "cues": 22,
+   "beats": 761,
+   "flat": true,
+   "audio": [
+    "full_audio/Tutorial_MC_Cues/Tutorial_MC_Cues.ogg"
+   ]
+  },
+  "Tutorial_MC_Cues/Tutorial_MC_Cues": {
+   "gestures": 40,
+   "cues": 22,
+   "beats": 761,
+   "flat": false,
+   "audio": [
+    "full_audio/Tutorial_MC_Cues/Tutorial_MC_Cues.ogg"
+   ]
+  },
+  "Tutorial_MC_Dynamics/Tutorial_Flat_MC_Dynamics": {
+   "gestures": 0,
+   "cues": 2,
+   "beats": 69,
+   "flat": true,
+   "audio": [
+    "full_audio/Tutorial_MC_Dynamics/Tutorial_MC_Dynamics.ogg"
+   ]
+  },
+  "Tutorial_MC_Dynamics/Tutorial_MC_Dynamics": {
+   "gestures": 0,
+   "cues": 2,
+   "beats": 69,
+   "flat": false,
+   "audio": [
+    "full_audio/Tutorial_MC_Dynamics/Tutorial_MC_Dynamics.ogg"
+   ]
+  },
+  "Tutorial_MC_Fermata/Tutorial_Flat_MC_Fermata": {
+   "gestures": 20,
+   "cues": 11,
+   "beats": 147,
+   "flat": true,
+   "audio": [
+    "full_audio/Tutorial_MC_Fermata/Tutorial_MC_Fermata.ogg"
+   ]
+  },
+  "Tutorial_MC_Fermata/Tutorial_MC_Fermata": {
+   "gestures": 20,
+   "cues": 10,
+   "beats": 147,
+   "flat": false,
+   "audio": [
+    "full_audio/Tutorial_MC_Fermata/Tutorial_MC_Fermata.ogg"
+   ]
+  },
+  "Tutorial_MC_Intro/Tutorial_Flat_MC_Intro": {
+   "gestures": 25,
+   "cues": 0,
+   "beats": 82,
+   "flat": true,
+   "audio": [
+    "full_audio/Tutorial_MC_Intro/Tutorial_MC_Intro.ogg"
+   ]
+  },
+  "Tutorial_MC_Intro/Tutorial_MC_Intro": {
+   "gestures": 25,
+   "cues": 0,
+   "beats": 82,
+   "flat": false,
+   "audio": [
+    "full_audio/Tutorial_MC_Intro/Tutorial_MC_Intro.ogg"
+   ]
+  },
+  "Tutorial_MC_Tempo/Tutorial_Flat_MC_Tempo": {
+   "gestures": 40,
+   "cues": 0,
+   "beats": 88,
+   "flat": true,
+   "audio": [
+    "full_audio/Tutorial_MC_Tempo/Tutorial_MC_Tempo.ogg"
+   ]
+  },
+  "Tutorial_MC_Tempo/Tutorial_MC_Tempo": {
+   "gestures": 40,
+   "cues": 0,
+   "beats": 88,
+   "flat": false,
+   "audio": [
+    "full_audio/Tutorial_MC_Tempo/Tutorial_MC_Tempo.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/MC_Verdi_DiesIrae_Flat": {
+   "gestures": 169,
+   "cues": 46,
+   "beats": 562,
+   "flat": true,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Flat_Easy": {
+   "gestures": 169,
+   "cues": 46,
+   "beats": 562,
+   "flat": true,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Flat_Expert": {
+   "gestures": 455,
+   "cues": 105,
+   "beats": 562,
+   "flat": true,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Flat_Hard": {
+   "gestures": 321,
+   "cues": 90,
+   "beats": 562,
+   "flat": true,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Flat_Medium": {
+   "gestures": 213,
+   "cues": 46,
+   "beats": 562,
+   "flat": true,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/MC_Verdi_DiesIrae": {
+   "gestures": 170,
+   "cues": 46,
+   "beats": 562,
+   "flat": false,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Easy": {
+   "gestures": 170,
+   "cues": 46,
+   "beats": 562,
+   "flat": false,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Expert": {
+   "gestures": 455,
+   "cues": 105,
+   "beats": 562,
+   "flat": false,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Hard": {
+   "gestures": 321,
+   "cues": 90,
+   "beats": 562,
+   "flat": false,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Verdi_DiesIrae/Verdi_DiesIrae_Medium": {
+   "gestures": 213,
+   "cues": 46,
+   "beats": 562,
+   "flat": false,
+   "audio": [
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/Verdi_DiesIrae.ogg",
+    "full_audio/Verdi_DiesIrae/ScoreSoundAsset/FailMode_VERDI_-_DIES_IRAE.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Flat_Easy": {
+   "gestures": 92,
+   "cues": 36,
+   "beats": 520,
+   "flat": true,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Flat_Expert": {
+   "gestures": 400,
+   "cues": 64,
+   "beats": 520,
+   "flat": true,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Flat_Hard": {
+   "gestures": 335,
+   "cues": 42,
+   "beats": 520,
+   "flat": true,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Flat_Medium": {
+   "gestures": 164,
+   "cues": 30,
+   "beats": 520,
+   "flat": true,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Easy": {
+   "gestures": 92,
+   "cues": 36,
+   "beats": 520,
+   "flat": false,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Expert": {
+   "gestures": 443,
+   "cues": 59,
+   "beats": 520,
+   "flat": false,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Hard": {
+   "gestures": 335,
+   "cues": 42,
+   "beats": 520,
+   "flat": false,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Vivaldi_Winter/Vivaldi_Winter_Medium": {
+   "gestures": 164,
+   "cues": 30,
+   "beats": 520,
+   "flat": false,
+   "audio": [
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/Vivaldi_Winter.ogg",
+    "full_audio/Vivaldi_Winter/ScoreSoundAsset/FailMode_Vivaldi_Winter.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Flat_Easy": {
+   "gestures": 176,
+   "cues": 67,
+   "beats": 621,
+   "flat": true,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Flat_Expert": {
+   "gestures": 488,
+   "cues": 114,
+   "beats": 621,
+   "flat": true,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Flat_Hard": {
+   "gestures": 390,
+   "cues": 96,
+   "beats": 621,
+   "flat": true,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Flat_Medium": {
+   "gestures": 302,
+   "cues": 72,
+   "beats": 621,
+   "flat": true,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Easy": {
+   "gestures": 176,
+   "cues": 67,
+   "beats": 621,
+   "flat": false,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Expert": {
+   "gestures": 503,
+   "cues": 127,
+   "beats": 621,
+   "flat": false,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Hard": {
+   "gestures": 390,
+   "cues": 96,
+   "beats": 621,
+   "flat": false,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  },
+  "Wagner_RideOfTheValkyries/Wagner_RideOfTheValkyries_Medium": {
+   "gestures": 302,
+   "cues": 72,
+   "beats": 621,
+   "flat": false,
+   "audio": [
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/Wagner_RideOfTheValkyries.ogg",
+    "full_audio/Wagner_RideOfTheValkyries/ScoreSoundAsset/FailMode_WAGNER_-_RIDE_OF_THE_VALKYRIES.ogg"
+   ]
+  }
+ }
+}

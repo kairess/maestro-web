@@ -1,7 +1,7 @@
 # Maestro Web
 
 A webcam conducting rhythm game in the browser, inspired by the VR game *Maestro*.
-Conduct Verdi's *Dies Irae* with your hands: strokes with the right hand, cues, dynamics and fermatas with the left.
+Conduct Verdi's *Dies Irae* (Easy / Medium / Hard / Expert, release charts) with your hands: strokes with the right hand; cues, crescendo/decrescendo, sustain, cut and contain with the left.
 
 **Play:** https://kairess.github.io/maestro-web/ (desktop Chrome/Edge, webcam required)
 
@@ -36,7 +36,7 @@ npm run deploy     # build and publish to GitHub Pages (gh-pages branch)
 # Maestro Web (한국어)
 
 VR 지휘 리듬게임 *Maestro* 에서 영감을 받은 브라우저용 웹캠 지휘 게임입니다.
-오른손으로 박자를 젓고, 왼손으로 큐·다이내믹스·페르마타를 표현하며 베르디 *Dies Irae* 를 지휘합니다.
+오른손으로 박자를 젓고, 왼손으로 큐·크레셴도/데크레셴도·서스테인·컷·컨테인을 표현하며 베르디 *Dies Irae* 를 지휘합니다 (Easy / Medium / Hard / Expert, 정식 출시판 채보).
 
 **플레이:** https://kairess.github.io/maestro-web/ (데스크톱 Chrome/Edge, 웹캠 필요)
 

@@ -1,6 +1,11 @@
 export type Token = 'Up' | 'Down' | 'Left' | 'Right' | 'DownLeft' | 'DownRight';
 export type GestureType = 'Normal' | 'Low' | 'Accent';
-export type DynamicsType = 'Crescendo' | 'Decrescendo' | 'Fermata' | 'Sustain' | 'Contain';
+/**
+ * Left-hand expressions. The demo charts had only Crescendo/Decrescendo (plus a separate fermata
+ * list); the release replaces fermatas with Sustain (hold) followed by a one-beat Cut (release),
+ * and adds Contain (keep the orchestra held back: calm hand, no rise).
+ */
+export type DynamicsType = 'Crescendo' | 'Decrescendo' | 'Sustain' | 'Contain' | 'Cut';
 export type Hand = 'left' | 'right';
 
 export interface Vec2 {
@@ -36,7 +41,10 @@ export interface Cue {
 export interface Dynamics {
   id: number;
   type: DynamicsType;
+  /** Section (demo: an instrument name; release: a stage anchor such as "Score_400_65"). */
   instrument: string;
+  /** Release charts: the musicians the expression is aimed at (may be empty). */
+  musicians: string[];
   begin: number;
   end: number;
   time: [number, number];
@@ -58,6 +66,10 @@ export interface FocusSection {
 
 export interface Chart {
   name: string;
+  /** Song folder ("Verdi_DiesIrae"); audio lives under audio/<songDir>/. */
+  songDir: string;
+  /** Release "Flat" variant (made for the flat-screen mode). */
+  flatScreen: boolean;
   audio: [normal: string, fail?: string];
   applauseTime: number | null;
   numInitialBeatsToSkip: number;

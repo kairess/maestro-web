@@ -46,7 +46,15 @@ interface DynamicsState {
   bestRise: number;
   /** Signed height of the last frame, to see whether the rise was held. */
   last: number;
+  /** Live 0..1 progress for the visuals (rise, hold ratio or flick strength by type). */
   score: number;
+  /** Sustain / Contain: frames seen and frames that satisfied the hold. */
+  frames: number;
+  heldFrames: number;
+  /** Contain: hand height when the span started. */
+  startY: number;
+  /** Cut: fastest hand speed seen in the window. */
+  peakSpeed: number;
   grade?: Grade;
 }
 
@@ -111,7 +119,19 @@ export class Judge {
         return { gesture: g, phase: 'pending', requirements, hitTimes: requirements.map(() => undefined), peaks: requirements.map(() => undefined), sawWrong: false };
       });
     this.cues = chart.cues.map((cue) => ({ cue, phase: 'pending', minY: Infinity, xAtMin: 0, sawRise: false }));
-    this.dynamics = chart.dynamics.map((dynamics) => ({ dynamics, phase: 'pending', lowest: Infinity, peak: -Infinity, bestRise: 0, last: NaN, score: 0 }));
+    this.dynamics = chart.dynamics.map((dynamics) => ({
+      dynamics,
+      phase: 'pending',
+      lowest: Infinity,
+      peak: -Infinity,
+      bestRise: 0,
+      last: NaN,
+      score: 0,
+      frames: 0,
+      heldFrames: 0,
+      startY: NaN,
+      peakSpeed: 0,
+    }));
     this.fermatas = chart.fermatas.map((fermata) => ({ fermata, phase: 'pending', frames: 0, heldFrames: 0, holdRatio: 0 }));
   }
 
@@ -273,36 +293,107 @@ export class Judge {
     return snap.hands.left ?? snap.hands.right;
   }
 
+  /** When a dynamics span starts being judged (Cut opens a little before its beat). */
+  private opensAt(d: DynamicsState['dynamics']): number {
+    return d.type === 'Cut' ? d.time[0] - this.profile.cut.early : d.time[0];
+  }
+
+  private closesAt(d: DynamicsState['dynamics']): number {
+    return d.type === 'Cut' ? d.time[1] + this.profile.cut.late : d.time[1];
+  }
+
   private updateDynamics(snap: BodySnapshot, _dt: number, events: JudgeEvent[]): void {
     const t = snap.t;
-    const d = this.profile.dynamics;
     for (let i = this.di; i < this.dynamics.length; i++) {
       const s = this.dynamics[i];
-      const [t0, t1] = s.dynamics.time;
-      if (t0 > t) break;
+      if (this.opensAt(s.dynamics) > t) break;
       if (s.phase === 'done') continue;
       s.phase = 'active';
-      if (t <= t1) {
-        const h = this.expressiveHand(snap);
-        if (h) {
-          const y = s.dynamics.type === 'Decrescendo' ? -h.pos.y : h.pos.y;
-          s.lowest = Math.min(s.lowest, y);
-          const rise = y - s.lowest;
-          if (rise > s.bestRise) {
-            s.bestRise = rise;
-            s.peak = y;
-          }
-          s.last = y;
-          s.score = Math.min(1, s.bestRise / d.rise);
-        }
-      } else {
-        const held = Number.isFinite(s.last) && s.peak - s.last <= d.dropTolerance;
-        s.grade = s.bestRise >= d.rise && held ? 'perfect' : s.bestRise >= d.goodRise ? 'good' : 'miss';
+      const finish = (grade: Grade) => {
+        s.grade = grade;
         s.phase = 'done';
-        events.push({ kind: 'dynamics', dynamics: s.dynamics, grade: s.grade, score: s.score, t });
+        events.push({ kind: 'dynamics', dynamics: s.dynamics, grade, score: s.score, t });
+      };
+      const open = t <= this.closesAt(s.dynamics);
+      switch (s.dynamics.type) {
+        case 'Crescendo':
+        case 'Decrescendo':
+          this.trackRise(s, snap, open, finish);
+          break;
+        case 'Sustain':
+          this.trackSustain(s, snap, open, finish);
+          break;
+        case 'Contain':
+          this.trackContain(s, snap, open, finish);
+          break;
+        case 'Cut':
+          this.trackCut(s, snap, open, finish);
+          break;
       }
     }
     while (this.di < this.dynamics.length && this.dynamics[this.di].phase === 'done') this.di++;
+  }
+
+  /** Crescendo: at any point the hand rises by `rise` from its lowest point so far and stays up. Decrescendo mirrors it. */
+  private trackRise(s: DynamicsState, snap: BodySnapshot, open: boolean, finish: (g: Grade) => void): void {
+    const d = this.profile.dynamics;
+    if (open) {
+      const h = this.expressiveHand(snap);
+      if (!h) return;
+      const y = s.dynamics.type === 'Decrescendo' ? -h.pos.y : h.pos.y;
+      s.lowest = Math.min(s.lowest, y);
+      const rise = y - s.lowest;
+      if (rise > s.bestRise) {
+        s.bestRise = rise;
+        s.peak = y;
+      }
+      s.last = y;
+      s.score = Math.min(1, s.bestRise / d.rise);
+      return;
+    }
+    const held = Number.isFinite(s.last) && s.peak - s.last <= d.dropTolerance;
+    finish(s.bestRise >= d.rise && held ? 'perfect' : s.bestRise >= d.goodRise ? 'good' : 'miss');
+  }
+
+  /** Sustain (the release's fermata): hold still for most of the span, height does not matter. */
+  private trackSustain(s: DynamicsState, snap: BodySnapshot, open: boolean, finish: (g: Grade) => void): void {
+    const f = this.profile.fermata;
+    if (open) {
+      s.frames++;
+      if (this.isHolding(snap.hands.left) || this.isHolding(snap.hands.right)) s.heldFrames++;
+      s.score = s.heldFrames / s.frames;
+      return;
+    }
+    finish(s.score >= 0.9 ? 'perfect' : s.score >= f.holdFraction ? 'good' : 'miss');
+  }
+
+  /** Contain: keep the hand calm and do not let it rise (pressing down is fine). */
+  private trackContain(s: DynamicsState, snap: BodySnapshot, open: boolean, finish: (g: Grade) => void): void {
+    const c = this.profile.contain;
+    if (open) {
+      const h = this.expressiveHand(snap);
+      s.frames++;
+      if (h) {
+        if (!Number.isFinite(s.startY)) s.startY = h.pos.y;
+        if (h.speed <= c.speed && h.pos.y - s.startY <= c.maxRise) s.heldFrames++;
+      }
+      s.score = s.heldFrames / s.frames;
+      return;
+    }
+    finish(s.score >= c.perfectFraction ? 'perfect' : s.score >= this.profile.fermata.holdFraction ? 'good' : 'miss');
+  }
+
+  /** Cut: one quick flick of the hand (any direction) around the release beat. */
+  private trackCut(s: DynamicsState, snap: BodySnapshot, open: boolean, finish: (g: Grade) => void): void {
+    const c = this.profile.cut;
+    if (open) {
+      const h = this.expressiveHand(snap);
+      if (h) s.peakSpeed = Math.max(s.peakSpeed, h.speed);
+      s.score = Math.min(1, s.peakSpeed / c.speed);
+      if (s.peakSpeed >= c.speed) finish('perfect'); // react on the flick, not at the window's end
+      return;
+    }
+    finish(s.peakSpeed >= c.speed * 0.6 ? 'good' : 'miss');
   }
 
   // ---------------------------------------------------------------- fermatas

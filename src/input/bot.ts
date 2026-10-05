@@ -76,10 +76,32 @@ export class BotInput implements InputSource {
     }
     for (const d of this.chart.dynamics) {
       const [t0, t1] = d.time;
-      if (t < t0 - 0.2 || t > t1 + 0.2) continue;
+      if (t < t0 - 0.3 || t > t1 + 0.3) continue;
       const u = Math.min(1, Math.max(0, (t - t0) / (t1 - t0)));
-      const dir = d.type === 'Decrescendo' ? -1 : 1;
-      pos.left.y += dir * (0.15 * (t1 - t0)) * u; // 0.15 m/s
+      switch (d.type) {
+        case 'Crescendo':
+        case 'Decrescendo': {
+          const dir = d.type === 'Decrescendo' ? -1 : 1;
+          pos.left.y += dir * Math.max(0.2, 0.15 * (t1 - t0)) * u; // ~0.15 m/s, at least 20 cm (survives a cue dip just before)
+          break;
+        }
+        case 'Sustain':
+        case 'Contain':
+          // Hold the hand up (sustain) or low (contain) and keep it still.
+          if (t >= t0 - 0.3 && t <= t1) {
+            pos.left.x = -0.3;
+            pos.left.y = d.type === 'Sustain' ? 0.15 : -0.1;
+          }
+          break;
+        case 'Cut': {
+          // One fast outward flick, centred in the one-beat span.
+          const mid = (t0 + t1) / 2;
+          const k = Math.min(1, Math.max(0, (t - (mid - 0.08)) / 0.16));
+          pos.left.x = -0.3 - 0.2 * k * k * (3 - 2 * k);
+          pos.left.y = 0.15;
+          break;
+        }
+      }
     }
     for (const f of this.chart.fermatas) {
       const [t0, t1] = f.time;

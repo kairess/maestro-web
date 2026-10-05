@@ -52,11 +52,29 @@ export interface JudgeProfile {
     /** After the peak, sinking back more than this (m) before the span ends means it was not held. */
     dropTolerance: number;
   };
+  /** Demo-chart fermatas and release-chart Sustain: hold still. */
   fermata: {
     /** Max speed (m/s) to count as holding still. */
     stillSpeed: number;
     /** Fraction of frames in the span that must satisfy the hold. */
     holdFraction: number;
+  };
+  /** Release-chart Contain: keep the orchestra held back — calm hand that does not rise. */
+  contain: {
+    /** Max speed (m/s) to count as calm. */
+    speed: number;
+    /** Rising more than this (m) above where the span started is not "containing". */
+    maxRise: number;
+    /** Calm-frame fraction for a Perfect (holdFraction above gives a Good). */
+    perfectFraction: number;
+  };
+  /** Release-chart Cut: the release after a Sustain — one quick, decisive flick of the hand. */
+  cut: {
+    /** Peak speed (m/s) for a Perfect; 60% of it gives a Good. */
+    speed: number;
+    /** Seconds the window opens before / stays open after the one-beat Cut span. */
+    early: number;
+    late: number;
   };
 }
 
@@ -75,6 +93,8 @@ export const ORIGINAL_PROFILE: JudgeProfile = {
   cue: { timeWindow: 0.3, rise: 0.1, sideShift: 0.05 },
   dynamics: { rise: 0.1, goodRise: 0.05, dropTolerance: 0.04 },
   fermata: { stillSpeed: 0.3, holdFraction: 0.7 },
+  contain: { speed: 0.4, maxRise: 0.08, perfectFraction: 0.85 },
+  cut: { speed: 0.8, early: 0.1, late: 0.25 },
 };
 
 export const EASY_PROFILE: JudgeProfile = {
@@ -89,6 +109,8 @@ export const EASY_PROFILE: JudgeProfile = {
   cue: { timeWindow: 0.45, rise: 0.06, sideShift: 0.03 },
   dynamics: { rise: 0.06, goodRise: 0.03, dropTolerance: 0.05 },
   fermata: { stillSpeed: 0.35, holdFraction: 0.6 },
+  contain: { speed: 0.5, maxRise: 0.1, perfectFraction: 0.8 },
+  cut: { speed: 0.45, early: 0.15, late: 0.35 },
 };
 
 export interface DisplayConfig {
