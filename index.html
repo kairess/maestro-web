@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maestro Web</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%23ffb454%27/%3E%3Cpath d=%27M18 44 L46 16%27 stroke=%27%23221400%27 stroke-width=%276%27 stroke-linecap=%27round%27/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-KqahXNvE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CaDxIxal.css">
+  </head>
+  <body>
+    <canvas id="gl"></canvas>
+    <video id="cam" playsinline muted></video>
+
+    <section id="screen-title" class="screen show">
+      <h1>MAESTRO<span>web</span></h1>
+      <p class="sub">웹캠 앞에서 오케스트라를 지휘하세요.</p>
+      <div class="row">
+        <label>채보</label>
+        <div class="seg" id="chart-select">
+          <button data-chart="Easy" class="active">Easy</button>
+          <button data-chart="Medium">Medium</button>
+          <button data-chart="Hard">Hard</button>
+          <button data-chart="Expert">Expert</button>
+        </div>
+      </div>
+      <div class="row">
+        <label>입력</label>
+        <div class="seg" id="input-select">
+          <button data-input="camera" class="active">웹캠</button>
+          <button data-input="keys">키보드</button>
+          <button data-input="bot">자동(봇)</button>
+        </div>
+      </div>
+      <div class="row">
+        <label>추적</label>
+        <div class="seg" id="track-select">
+          <button data-track="hands">손만 (빠름)</button>
+          <button data-track="pose+hands">몸+손</button>
+          <button data-track="pose">몸만</button>
+        </div>
+      </div>
+      <div class="row">
+        <label>입력 지연 보정</label>
+        <input id="latency" type="number" min="0" max="400" step="10" value="100" /> <span class="unit">ms</span>
+      </div>
+      <div class="row">
+        <label>음악 싱크 보정</label>
+        <input id="sync" type="number" min="-600" max="600" step="10" value="0" /> <span class="unit">ms · 노트가 늦게 느껴지면 +</span>
+      </div>
+      <div class="row">
+        <label>디버그</label>
+        <input id="debug-toggle" type="checkbox" />
+      </div>
+      <button id="btn-start" class="primary">시작</button>
+      <p id="title-status" class="status"></p>
+      <p class="hint">Verdi · Dies Irae — 지휘봉(오른손)으로 화살표 방향을 박자에 맞춰 젓고, 왼손으로 큐·다이내믹스·페르마타를 표현하세요.</p>
+    </section>
+
+    <section id="screen-calib" class="screen">
+      <h2>캘리브레이션</h2>
+      <div class="calib-preview">
+        <video id="calib-video" playsinline muted></video>
+        <canvas id="calib-overlay"></canvas>
+        <div class="calib-ring"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" id="calib-ring" cx="50" cy="50" r="45"/></svg></div>
+      </div>
+      <p id="calib-text" class="status">카메라를 준비하는 중…</p>
+      <pre id="calib-axes" class="mono"></pre>
+      <div class="row center">
+        <button id="btn-recalib">다시 측정</button>
+        <button id="btn-play" class="primary" disabled>지휘 시작</button>
+        <button id="btn-calib-back">뒤로</button>
+      </div>
+    </section>
+
+    <div id="hud" class="hud"></div>
+    <div id="pip" class="pip"><video id="pip-video" playsinline muted></video><canvas id="debug-overlay"></canvas></div>
+    <pre id="debug-panel" class="debug-panel mono"></pre>
+
+    <section id="screen-result" class="screen">
+      <h2>연주 종료</h2>
+      <div id="result"></div>
+      <div class="row center">
+        <button id="btn-retry" class="primary">다시 지휘</button>
+        <button id="btn-title">처음으로</button>
+      </div>
+    </section>
+
+  </body>
+</html>

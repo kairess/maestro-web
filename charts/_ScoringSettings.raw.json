@@ -1,0 +1,88 @@
+{
+ "file": "extracted/Maestro/Content\\GameLogic\\Settings\\ScoringSettings.uasset",
+ "imports": [
+  "/Script/MaestroGameplay.ScoringSettings",
+  "/Script/MaestroGameplay",
+  "/Script/MaestroGameplay.Default__ScoringSettings"
+ ],
+ "exports": [
+  {
+   "name": "ScoringSettings",
+   "class": "ScoringSettings",
+   "super": null,
+   "outer": null,
+   "size": 1404,
+   "props": {
+    "GestureSettings": {
+     "__struct__": "GestureSettings",
+     "TimeTolerancy": 0.2,
+     "GestureCenterInterpSpeed": 3.0,
+     "GestureTolerancy": {
+      "__struct__": "GestureTolerancySettings",
+      "SpeedThreshold": 75.0,
+      "AngleTolerancyInDegrees": 35.0
+     },
+     "AccentGestureTolerancy": {
+      "__struct__": "GestureTolerancySettings",
+      "SpeedThreshold": 150.0,
+      "AngleTolerancyInDegrees": 35.0
+     },
+     "FirstTokenGestureTolerancy": {
+      "__struct__": "GestureTolerancySettings",
+      "SpeedThreshold": 250.0,
+      "AngleTolerancyInDegrees": 25.0
+     },
+     "CueingGestureTolerancy": {
+      "__struct__": "CueingGestureTolerancySettings",
+      "HMDToHandDistance": 26.0,
+      "AngleToleranceInDegrees": 45.0,
+      "AnglePlanarToleranceInDegrees": 35.0,
+      "TimeTolerancy": 0.3,
+      "NumSubSamples": 13,
+      "DisplayAnticipation": 1.5,
+      "PseudoIndexLocation": [
+       11.0,
+       0.0,
+       -3.0
+      ]
+     },
+     "FirstTokenValidationTimeBuffer": 0.5,
+     "NumSubSamples": 35
+    },
+    "DynamicsSettings": {
+     "__struct__": "DynamicsSettings",
+     "DisplayAnticipation": 2.5,
+     "CrescendoValidationAngle": -160.0,
+     "FermataValidationAngle": -160.0,
+     "InHandAngleTolerance": 25.0,
+     "OutHandAngleTolerance": 50.0,
+     "HandMovementThreshold": 0.001,
+     "SpeedComputeTimeWindow": 0.5,
+     "VerticalSpeedToScore_Crescendo": [
+      2.0,
+      7.5
+     ],
+     "VerticalSpeedToScore_Decrescendo": [
+      -2.0,
+      -7.5
+     ]
+    },
+    "FermataSettings": {
+     "__struct__": "FermataSettings",
+     "DisplayAnticipation": 1.5
+    },
+    "LeftTipRelativeLocation": [
+     30.0,
+     20.0,
+     -18.0
+    ],
+    "RightTipRelativeLocation": [
+     30.0,
+     -20.0,
+     -18.0
+    ]
+   },
+   "trailing_bytes": 4
+  }
+ ]
+}
